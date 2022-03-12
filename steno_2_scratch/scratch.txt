@@ -1,0 +1,137 @@
+
+
+
+theCollection[numerizedChord_] := Module[{i, k, stale, collector},
+   stale = PadRight[numerizedChord, 23];
+   collector = {};
+   i = 1;
+   k = 1;
+   Do[
+    If[
+      stale[[k]] == i,
+      (AppendTo[collector, {i, 1}]; k++),
+      AppendTo[collector, {i, 0}]
+      ];
+
+    , {i, fresh}];
+   collector
+   ];
+
+
+
+
+
+
+
+theCollection[numerizedChord_] := Module[{i, k, stale, collector},
+   stale = PadRight[numerizedChord, 23];
+   collector = {};
+   i = 1;
+   k = 1;
+   Do[
+    If[
+      stale[[k]] == i,
+      (AppendTo[collector, {i, 1}]; k++),
+      AppendTo[collector, {i, 0}]
+      ];
+
+    , {i, fresh}];
+   collector
+   ];
+
+
+
+
+
+theCollection[numerizedChord_] := Module[{i, k, stale, collector},
+   stale = PadRight[numerizedChord, 23];
+   collector = {};
+   i = 1;
+   k = 1;
+   Do[
+    If[
+      stale[[k]] == i,
+      (AppendTo[collector, {i, 1}]; k++),
+      AppendTo[collector, {i, 0}]
+      ];
+
+    , {i, fresh}];
+   collector
+   ];
+
+
+
+
+theCollection[numerizedChord_] := Module[{i, k, stale, collector},
+   stale = PadRight[numerizedChord, 23];
+   collector = {};
+   i = 1;
+   k = 1;
+   Do[
+    If[
+      stale[[k]] == i,
+      (AppendTo[collector, {i, 1}]; k++),
+      AppendTo[collector, {i, 0}]
+      ];
+
+    , {i, fresh}];
+   collector
+   ];
+
+
+
+
+
+theCollection[numerizedChord_] := Module[{i, k, stale, collector},
+   stale = PadRight[numerizedChord, 23];
+   collector = {};
+   i = 1;
+   k = 1;
+   Do[
+    If[
+      stale[[k]] == i,
+      (AppendTo[collector, {i, 1}]; k++),
+      AppendTo[collector, {i, 0}]
+      ];
+
+    , {i, fresh}];
+   collector
+   ];
+
+
+
+
+theCollection[numerizedChord_] := Module[{i, k, stale, collector},
+   stale = PadRight[numerizedChord, 23];
+   collector = {};
+   i = 1;
+   k = 1;
+   Do[
+    If[
+      stale[[k]] == i,
+      (AppendTo[collector, {i, 1}]; k++),
+      AppendTo[collector, {i, 0}]
+      ];
+
+    , {i, fresh}];
+   collector
+   ];
+
+
+
+
+theCollection[numerizedChord_] := Module[{i, k, stale, collector},
+   stale = PadRight[numerizedChord, 23];
+   collector = {};
+   i = 1;
+   k = 1;
+   Do[
+    If[
+      stale[[k]] == i,
+      (AppendTo[collector, {i, 1}]; k++),
+      AppendTo[collector, {i, 0}]
+      ];
+
+    , {i, fresh}];
+   collector
+   ];

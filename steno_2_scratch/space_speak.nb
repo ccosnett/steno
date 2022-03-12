@@ -1,0 +1,83 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2405,         75]
+NotebookOptionsPosition[      1831,         56]
+NotebookOutlinePosition[      2212,         73]
+CellTagsIndexPosition[      2169,         70]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["program that speaks the word when you lift your \
+fingers",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FrontFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ BackFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ GraphicsColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`]]], "Section",\
+
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.765772064293207*^9, 
+  3.7657720829476233`*^9}},ExpressionUUID->"82247345-1e07-4320-b197-\
+b71248c29694"],
+
+Cell["\<\
+so a box in mathematica that speaks the previous word every time you type a \
+space\
+\>", "Item",
+ CellChangeTimes->{{3.7657720836226597`*^9, 
+  3.765772110564281*^9}},ExpressionUUID->"204a6261-8188-47ee-b99d-\
+91a8ff9538bf"],
+
+Cell[BoxData["InputField"], "Input",
+ CellChangeTimes->{{3.765773698779811*^9, 
+  3.76577370155991*^9}},ExpressionUUID->"ef9eb23d-5674-4f7c-8436-\
+3ab0598a77d5"]
+},
+WindowSize->{1280, 1391},
+WindowMargins->{{0, Automatic}, {Automatic, -1}},
+Background->GrayLevel[1],
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 867, 21, 210, "Section",ExpressionUUID->"82247345-1e07-4320-b197-b71248c29694",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin"],
+Cell[1428, 43, 235, 6, 63, "Item",ExpressionUUID->"204a6261-8188-47ee-b99d-91a8ff9538bf"],
+Cell[1666, 51, 161, 3, 59, "Input",ExpressionUUID->"ef9eb23d-5674-4f7c-8436-3ab0598a77d5"]
+}
+]
+*)
+

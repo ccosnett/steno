@@ -1,0 +1,395 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13235,        387]
+NotebookOptionsPosition[     12925,        373]
+NotebookOutlinePosition[     13279,        389]
+CellTagsIndexPosition[     13236,        386]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<a\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<A\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<app\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<g_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], 
+     StyleBox["\"\<\>\"",
+      FontWeight->"Normal"], 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<a\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"m", "@", "\"\<AEU\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<ape\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_g\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], 
+     StyleBox["\"\<\>\"",
+      FontWeight->"Normal"], 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<aw\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"m", "@", "\"\<AU\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<awe\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<h_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], 
+     StyleBox["\"\<\>\"",
+      FontWeight->"Normal"], 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<b_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<B_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<bat\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_h\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_b\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_B\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<crab\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_sh\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<c_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<K_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<kit\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<i\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<ch_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<KH_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<chat\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<i\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_c\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_BG\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<clock\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<j_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_ch\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_FP\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<touch\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_j\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<d_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_TK\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<dog\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<k_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_d\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_D\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<god\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_k\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<e\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<E\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<met\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<l_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<e\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<AOE\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<meet\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_l\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<e\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<AE\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<meat\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<m_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<f_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<TP_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<fat\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_m\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]},
+    {
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_f\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_F\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<oaf\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"], "\"\<\>\"", 
+     StyleBox[
+      RowBox[{"r", "[", 
+       RowBox[{"\"\<_\>\"", ",", "\"\<  \>\"", ",", 
+        RowBox[{"h", "@", "\"\<_\>\""}]}], "]"}],
+      FontWeight->"Normal"]}
+   },
+   AutoDelete->False,
+   GridBoxDividers->{
+    "Columns" -> {True, False, True, False, True, False, True}, 
+     "Rows" -> {True}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Input",ExpressionUUID->"849c8972-1858-4260-bdb5-fa3e74b65477"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 12363, 351, 5566, "Input",ExpressionUUID->"849c8972-1858-4260-bdb5-fa3e74b65477"]
+}
+]
+*)
+

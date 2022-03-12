@@ -1,0 +1,227 @@
+{
+
+   "-LG": "{#Return}",
+  "#T":"2",
+  "#P":"3",
+  "#H":"4",
+
+  "SKWAEUB":"\\[{^}",
+  "SKWAEU":"[{^}",
+  "S*ET":"\\{\\}{#left}{^}",
+
+  "KA*PS":"{#Caps_Lock}",
+  "ST":"{#Tab}",
+  "STP": "is it",
+  "UR": "{#Super_L()}",
+  "PHRA-*E":"{#Shift_L(Alt_L(m))}",
+  "RA*EP":"{#Shift_L(Alt_R(Down))}",
+  "RA*EF":"{#Shift_L(Alt_R(Up))}",
+  "PRA*E":"{#Shift_L(Alt_R(Left))}",
+  "HRA*E":"{#Shift_L(Alt_R(Right))}",
+
+  "S-S":"\"\"{#Left}{^}",
+  "R*EUR":"{#Shift_L(Alt_R(r))}",
+  "KR*EUR":"{#Control_L(comma)}",
+  "TO*E":"{#Control_L(Alt_R(t))}",
+  "WO*E":"{#Control_L(Alt_R(w))}",
+
+  "T*E":"{#Alt_L(Tab)}{#Tab}{#Tab}{#Tab}",
+
+  "TRAO*":"{#Control_L(Shift_L(Tab))}",
+
+  "TO*":"{#Control_L(Tab)}",
+  "O*PL":"{#Control_L(equal)}",
+
+  "O*-LT":"{#Control_L(underscore)}{^}",
+  "0*6":"{#Control_L(6)}{^}",
+
+  "TPO*-PL":"{#Control_L(period)}",
+  "O*-FP":"{#Control_L(period)}",
+  "TP*EPL":"{#Control_L(period period)}",
+  "*EFP":"{#Control_L(period period)}",
+  "TPO*EPL":"{#Control_L(period period period)}",
+  "O*EFP":"{#Control_L(period period period)}",
+  "KWO*-BG":"{#Control_L(comma)}",
+
+  "SRE*":"{#Alt_L(v)}",
+  "*ERBG":"{#Alt_L(w)}",
+  "KWRO*":"{#Control_L(y)}",
+  "PH-FP":":=",
+
+
+  "SUR":"{#Super_L(s)}",
+
+
+  "WO*E":"{#Control_L(Alt_R(w))}",
+
+  "-FRPBLGTS":"{#Control_L(Super_L(Alt_R(f)))}",
+
+
+
+  "KH-*EFG":"{#Alt_R(grave)}",
+  "P*E": "{#Alt_R(b)}",
+  "H*E": "{#Alt_R(f)}",
+  "S*E": "{#Alt_R(s)}",
+  "E*RBG":"{#Alt_L(w)}",
+  "KWR*E": "{#Alt_R(y)}",
+
+  "RA-F": "{#Shift_L(Up)}",
+  "RA-P": "{#Shift_L(Down)}",
+  "HRA": "{#Shift_L(Right)}",
+  "PRA": "{#Shift_L(Left)}",
+  "KWRABG": "<",
+  "TPRAPL": ">",
+
+
+
+  "O*URP":"{#Control_L(Super_L(Down))}",
+  "O*UFR":"{#Control_L(Super_L(Up))}",
+  "PO*-UR":"{#Control_L(Super_L(Left))}",
+  "HO*-UR":"{#Control_L(Super_L(Right))}",
+
+  "W*E":"{#Alt_R(BackSpace)}",
+
+  "STKPWHR":"{#Control_L(Super_L(Alt_R(v)))}",
+  "STKPWHRO":"{#Control_L(Alt_R(t))} o /home/conor/Dropbox/05_PROGRAMS/17_steno/diWindow.nb {#Return} {#Down} {#Right}{#Right}{#Right}{#Right}",
+  "E":"{#Control_L(Super_L(Alt_R(w)))}",
+  "R":"{#Space}",
+  "W":"{#BackSpace}",
+  "-L":"{#Control_L(Return)}{#Shift_L(Return)}",
+  "T-T": "{#Control_L(Super_L(Alt_R(m)))}",
+   "O": "{#Super_L(Alt_L(grave))}{#Alt_R(grave)}",
+  "-TS":"{#Control_L(Alt_L(Right))}",
+  "SKWR-B":"{#Shift_L(Down)}",
+  "KPH*L":"{#Super_L(Return)}",
+  "KHR*RBG":"{#Control_L(q)}",
+  "KHR*D":"{#Control_L(period)}",
+  "SHO*RT":"commandSquare {#Shift_L(Return)}",
+  "*EF":"{#Alt_L(Return)}",
+  "KPH*S":"{#Super_L(s)}",
+  "KHRA*":"{#Control_L(a)}",
+  "KHR*E":"{#Control_L(e)}",
+  "KHR*BG": "{#Control_L(k)}",
+  "KHR*F": "{#Control_L(v)}",
+  "KHR*T": "{#Control_L(w)}",
+  "KHR-BG": "{#Control_L(c)}",
+  "KPH*BG": "{#Super_L(k)}",
+  "KPH*F": "{#Super_L(v)}",
+  "KPH*T": "{#Super_L(w)}",
+  "KPH-BG": "{#Super_L(c)}",
+  "PHRO*F": "{PLOVER:SUSPEND}",
+  "PHROLG": "{PLOVER:TOGGLE}",
+  "PHROPB": "{PLOVER:RESUME}",
+  "PW*FP": "{#BackSpace}",
+  "PW-FP": "{#BackSpace}",
+  "R-R": "{#Return}{^}",
+  "R*R": "{^}sl{^}{#Return}{^}",
+  "SH-FT": "{#Control_L(Home)}{^}",
+  "SKW-BGS": "{#Return}{^}",
+  "SKWRAEURBGS": "{#Return}{#Return}{^}{-|}",
+  "SKWRAURBGS": "{#Return}{#Return}{^}{-|}",
+  "SKWROERBGS": "{#Return}{#Return}{^}{-|}",
+  "SR-RS": "{#Control_L(End)}{^}",
+  "STPH-B": "{#Down}{^}",
+  "STPH-BG": "{#Control_L(Right)}{^}",
+  "STPH-G": "{#Right}{^}",
+  "STPH-P": "{#Up}{^}",
+  "STPH-R": "{#Left}{^}",
+  "STPH-RB": "{#Control_L(Left)}{^}",
+  "TA*B": "{#Tab}{^}",
+
+  "TKUPT": "{PLOVER:ADD_TRANSLATION}",
+  "*EFBG": "{^}{#Escape}{^}",
+  "TPHEPBT": "{#Return}",
+  "TPW-G": "{#Alt_L(Right)}",
+  "TPW-R": "{#Alt_L(Left)}",
+
+  "W*EUT": "wit",
+  "WEUT": "with",
+
+  "PREPB": "{~|()^}{#Left}",
+  "PWR":"{^[^}",
+
+  "1-UR":"{#Super_L(1)}",
+  "2-UR":"{#Super_L(2)}",
+  "3-UR":"{#Super_L(3)}",
+  "4-UR":"{#Super_L(4)}",
+  "5-UR":"{#Super_L(5)}",
+  "U6R":"{#Super_L(6)}",
+  "U7R":"{#Super_L(7)}",
+  "U8R":"{#Super_L(8)}",
+  "U9R":"{#Super_L(9)}",
+
+  "1-U":"{#F1}",
+  "2-U":"{#F2}",
+  "3-U":"{#F3}",
+  "4-U":"{#F4}",
+  "5-U":"{#F5}",
+  "U6":"{#F6}",
+  "U7":"{#F7}",
+  "U8":"{#F8}",
+  "U9":"{#F9}",
+
+  "0*E":"{#Alt_L(0)}",
+  "1*E":"{#Alt_L(1)}",
+  "2*E":"{#Alt_L(2)}",
+  "3*E":"{#Alt_L(3)}",
+  "4*E":"{#Alt_L(4)}",
+  "5*E":"{#Alt_L(5)}",
+  "6*E":"{#Alt_L(6)}",
+  "7*E":"{#Alt_L(7)}",
+  "8*E":"{#Alt_L(8)}",
+  "9*E":"{#Alt_L(9)}",
+
+
+  "-P": "{#Down}",
+  "-F": "{#Up}",
+  "P": "{#Left}",
+  "H": "{#Right}",
+
+  "0E7": "o {#Space}{#Tab}{#Tab}",
+
+  "10E": "o {#Space}{#Tab}{#Tab}{#Return}{#Return}",
+  "20E": "o {#Space}{#Tab}{#Tab}{#Tab}{#Return}{#Return}",
+  "30E": "o {#Space}{#Tab}{#Tab}{#Tab}{#Tab}{#Return}{#Return}",
+   "R-PL":"{#Control_L(Alt_R(t))}",
+
+
+
+  "1E": "f {#Return}",
+  "2E": "f {#Return}",
+  "3E": "f {#Return}",
+  "4E": "f {#Return}",
+  "1-BG": "k {#Return}",
+  "2-BG": "k {#Return}",
+  "3-BG": "k {#Return}",
+  "4-BG": "k {#Return}",
+  "1-B": "c - {#Return}",
+  "2-B": "c .. {#Return}",
+   "*E78": "e {#Control_L(Return)}{#Shift_L(Return)}",
+
+
+
+
+   "HROEUG": "logic",
+   "3WR-D": "{#Super_L(Down)}",
+  "S":"{#Shift_L(Return)}{#Up}{#Control_L(e)}",
+
+
+  "#####__CONTROL__#######":"#######__CONTROL__###########",
+  "O*E":"{#Control_L(slash)}",
+  "OU": "{#Control_L(slash)}",
+  "PO*":"{#Control_L(a)}",
+  "KRO*":"{#Control_L(c)}",
+  "O*BG":"{#Control_L(k)}",
+  "HO*":"{#Control_L(e)}",
+  "SO*":"{#Control_L(s)}",
+  "WO*":"{#Control_L(w)}",
+  "SRO*":"{#Control_L(v)}",
+
+
+  "KPR": "{}{-|}",
+  "KPR*": "{^}{-|}"
+
+
+
+
+}

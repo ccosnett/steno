@@ -1,0 +1,1327 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45822,       1319]
+NotebookOptionsPosition[     36840,       1122]
+NotebookOutlinePosition[     37553,       1148]
+CellTagsIndexPosition[     37473,       1143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["0.0", "HistoryData",
+  CellTags->"New",ExpressionUUID->"7cf792ee-b607-4026-be25-1d2cc0a3c063"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"ad4740b3-ca6a-444e-abf5-a7b08e4a63e5"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->"e9aedfe3-08be-4791-ae55-e9ef6d43f510"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised",ExpressionUUID->"db012ecb-5c08-4065-99d3-574150448b02"]
+}], "History",
+ CellID->1247902091,ExpressionUUID->"f1448439-3b2e-4412-9dea-63e4b8b750e7"],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449,ExpressionUUID->"e306eb37-3631-47ae-9368-e14f2e4a6f2a"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507,ExpressionUUID->"fe262bc1-f39e-42b1-8070-11939f178515"],
+
+Cell["steno", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465,ExpressionUUID->"f951f81c-2b72-423b-9c39-453bed9ed883"],
+
+Cell["steno`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828,ExpressionUUID->"d4ee454a-c379-4fcc-93a1-bccf30d50089"],
+
+Cell["steno/ref/bme", "Categorization",
+ CellLabel->"URI",ExpressionUUID->"b148fcfa-fb67-4cd0-87f3-333249f9e372"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294,ExpressionUUID->"64244637-17b0-49a5-85b6-4d4c689b9b65"],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360,ExpressionUUID->"cab10b5b-6d37-42bc-b1ff-37eebb972836"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408,ExpressionUUID->"24fd7507-2482-4dc0-aefc-b3862bf3fe11"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412,ExpressionUUID->"cd322c18-9913-4e7c-88ac-a27647762c4c"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909,ExpressionUUID->"603b2c86-c5f1-4057-ae5a-07c31a9f4c55"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930,ExpressionUUID->"a5ddbe67-4573-4703-85e5-6ef10bca561f"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254,ExpressionUUID->"a80a3365-c9e2-4d85-81a5-e616a91ca399"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771,ExpressionUUID->"47d37b08-0f9d-4165-bffe-1e6d29dddfdb"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175,ExpressionUUID->"827e632a-dfef-479d-889d-3b1ed5214b2d"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985,ExpressionUUID->"7fc86428-301f-4a0b-afc3-c2ded70bd030"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405,ExpressionUUID->"edd0774c-294e-47e6-8590-8797c7661b3a"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269,ExpressionUUID->"acd730be-2ab9-4d11-8d19-f3caaac4725f"],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205,ExpressionUUID->"43c4adef-4e11-4cff-b77f-2a934c57e3db"],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745,ExpressionUUID->"1951f59a-ed3b-461a-8cbc-b371f0dce338"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810,ExpressionUUID->"8e008d40-1c6d-46a8-a2dd-d7adfc23128a"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350,ExpressionUUID->"28cfb103-b383-4f66-a41a-480c180b0956"],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365,ExpressionUUID->"057e9a27-9441-44a4-b29d-60b8560544bd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["bme", "ObjectName",
+ CellID->1224892054,ExpressionUUID->"1ae6e70e-4260-411e-8a73-4e1f7d65cf75"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"41f5facf-7ac7-4203-86bf-70d3594c6e81"],
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["bme",
+    BaseStyle->"Link",
+    ButtonData->"paclet:steno/ref/bme"], "[", "]"}]], "InlineFormula",
+  ExpressionUUID->"2673614f-ccd2-4bf1-a03f-286cfc64e5af"],
+ " \[LineSeparator]searches for words containing a certain character at the \
+beginning, the middle and the end."
+}], "Usage",
+ CellChangeTimes->{{3.766629225497979*^9, 3.766629234098748*^9}},
+ CellID->982511436,ExpressionUUID->"14f0a991-285f-4cef-b62f-e2f5572146b9"],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069,ExpressionUUID->"aa180d1c-8d8f-451b-933f-c59fae646284"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057,ExpressionUUID->"04de785e-7f68-4d06-8d8f-1e4c8e4f7fc5"],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938,ExpressionUUID->"3a5125d2-2b2d-4cd1-bd14-76263711e3a2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905,ExpressionUUID->"275b0d85-9ff5-40d3-8a2e-fa86f553badd"],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860,ExpressionUUID->"9615b7d9-7b5e-481f-bf40-3d9e6ede5eff"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535,ExpressionUUID->"1d462b3d-735b-43fb-8b65-37b59d6ecdcc"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239,ExpressionUUID->"fee9ac79-d028-4ff9-91cf-8df17c5a7c4c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704,ExpressionUUID->"ff9a0763-5c4b-4ff0-903c-63b220985325"],
+
+Cell["XXXX", "SeeAlso",
+ CellID->929782353,ExpressionUUID->"5dede528-d63d-4167-9bbb-d5900c251264"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248,ExpressionUUID->"5e593da2-c9a9-4893-9324-7589fd9c7213"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683,ExpressionUUID->"05ff9af2-b5aa-409d-af37-82a6c210ff8c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151,ExpressionUUID->"ffdfbe94-98f2-4d4a-9759-ee06ae3d0984"],
+
+Cell[BoxData[
+ RowBox[{"Get", "[", "\"\<steno`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.766628792073368*^9, 3.766628810563121*^9}, 
+   3.766629849803321*^9},
+ CellLabel->"In[28]:=",
+ CellID->368203437,ExpressionUUID->"8be29771-d0d3-43d8-97a4-a6819f7d0cfb"],
+
+Cell[TextData[StyleBox["Find all words with the following beginning middle \
+and end characters.",
+ StripOnInput->False,
+ LineColor->RGBColor[0, 0, 1],
+ FrontFaceColor->RGBColor[0, 0, 1],
+ BackFaceColor->RGBColor[0, 0, 1],
+ GraphicsColor->RGBColor[0, 0, 1],
+ FontWeight->Normal,
+ FontColor->RGBColor[0, 0, 1]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.7666291832727222`*^9, 3.766629206259737*^9}},
+ CellID->196754584,ExpressionUUID->"d7ffef8e-03a5-4568-a8d1-2b3f3374f243"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bme", "[", 
+  RowBox[{"\"\<a\>\"", ",", "\"\<b\>\"", ",", "\"\<c\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.766628784309657*^9, 3.7666288227232103`*^9}},
+ CellLabel->"In[29]:=",
+ CellID->1682815617,ExpressionUUID->"acde1a91-e098-496c-af63-261057eeacf1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"acerbic\"\>", ",", "\<\"acrobatic\"\>", 
+   ",", "\<\"adiabatic\"\>", ",", "\<\"aerobic\"\>", 
+   ",", "\<\"agoraphobic\"\>", ",", "\<\"alembic\"\>", 
+   ",", "\<\"algebraic\"\>", ",", "\<\"alphabetic\"\>", 
+   ",", "\<\"amoebic\"\>", ",", "\<\"anabolic\"\>", ",", "\<\"anaerobic\"\>", 
+   ",", "\<\"antibiotic\"\>", ",", "\<\"archbishopric\"\>", 
+   ",", "\<\"autobiographic\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.766628823823202*^9},
+ CellLabel->"Out[29]=",
+ CellID->2022350414,ExpressionUUID->"74bccd40-0328-4387-be05-a401c61d6ff4"]
+}, Open  ]],
+
+Cell[TextData[StyleBox["We do not need to fully define the arguments",
+ StripOnInput->False,
+ LineColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FrontFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ BackFaceColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ GraphicsColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`],
+ FontWeight->Normal,
+ FontColor->RGBColor[
+  0.22899251821568467`, 0.7568250097244553, 0.18772375680879838`]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.766629168019682*^9, 3.766629175752039*^9}},
+ CellID->252948048,ExpressionUUID->"c3688ce2-89ab-406e-b63f-e76a50cb843f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bme", "[", 
+  RowBox[{"\"\<\>\"", ",", "\"\<a\>\"", ",", "\"\<z\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.766628784309657*^9, 3.7666288227232103`*^9}, {
+  3.766628997886359*^9, 3.7666290202861*^9}},
+ CellLabel->"In[40]:=",
+ CellID->40719666,ExpressionUUID->"25a6f54d-9dda-4be4-9059-a728cdac077b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"abuzz\"\>", ",", "\<\"adz\"\>", ",", "\<\"ersatz\"\>", 
+   ",", "\<\"gigahertz\"\>", ",", "\<\"jazz\"\>", ",", "\<\"megahertz\"\>", 
+   ",", "\<\"quartz\"\>", ",", "\<\"razz\"\>", ",", "\<\"razzmatazz\"\>", 
+   ",", "\<\"schmaltz\"\>", ",", "\<\"topaz\"\>", ",", "\<\"waltz\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.766629003802356*^9, 3.766629021269682*^9}},
+ CellLabel->"Out[40]=",
+ CellID->429680511,ExpressionUUID->"81c01953-cdfd-4c6d-b9b1-678ef098b86b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968,ExpressionUUID->"82d03e33-096e-437e-9295-0f38d17ad936"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "9c61ace7-35a0-405e-892c-c7a1e23a7e30"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265,ExpressionUUID->"47b90f62-c378-44ef-a3c2-b300bcf4a1bc"],
+
+Cell[TextData[StyleBox["Lets sort by length. And get the first 50",
+ StripOnInput->False,
+ LineColor->RGBColor[1, 0, 1],
+ FrontFaceColor->RGBColor[1, 0, 1],
+ BackFaceColor->RGBColor[1, 0, 1],
+ GraphicsColor->RGBColor[1, 0, 1],
+ FontWeight->Normal,
+ FontColor->RGBColor[1, 0, 1]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.7666288521735773`*^9, 3.766628859123829*^9}, {
+  3.766628926732614*^9, 3.7666289343887444`*^9}},
+ CellID->448045865,ExpressionUUID->"770c800c-0ca2-474e-b184-2d37ee815055"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"longList", "=", 
+   RowBox[{"bme", "[", 
+    RowBox[{"\"\<a\>\"", ",", "\"\<\>\"", ",", "\"\<\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Take", "[", 
+  RowBox[{
+   RowBox[{"SortBy", "[", 
+    RowBox[{"longList", ",", "StringLength"}], "]"}], ",", "50"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.766628871510687*^9, 3.766628922517357*^9}},
+ CellLabel->"In[35]:=",
+ CellID->216791442,ExpressionUUID->"4c14f3b9-7b2a-4046-bf4f-8a49b26e21f1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"a\"\>", ",", "\<\"ad\"\>", ",", "\<\"ah\"\>", 
+   ",", "\<\"an\"\>", ",", "\<\"as\"\>", ",", "\<\"at\"\>", ",", "\<\"ax\"\>",
+    ",", "\<\"aah\"\>", ",", "\<\"ace\"\>", ",", "\<\"act\"\>", 
+   ",", "\<\"add\"\>", ",", "\<\"ado\"\>", ",", "\<\"adz\"\>", 
+   ",", "\<\"aft\"\>", ",", "\<\"age\"\>", ",", "\<\"ago\"\>", 
+   ",", "\<\"aha\"\>", ",", "\<\"aid\"\>", ",", "\<\"ail\"\>", 
+   ",", "\<\"aim\"\>", ",", "\<\"air\"\>", ",", "\<\"alb\"\>", 
+   ",", "\<\"ale\"\>", ",", "\<\"all\"\>", ",", "\<\"alp\"\>", 
+   ",", "\<\"amp\"\>", ",", "\<\"and\"\>", ",", "\<\"ant\"\>", 
+   ",", "\<\"any\"\>", ",", "\<\"ape\"\>", ",", "\<\"apt\"\>", 
+   ",", "\<\"arc\"\>", ",", "\<\"are\"\>", ",", "\<\"ark\"\>", 
+   ",", "\<\"arm\"\>", ",", "\<\"art\"\>", ",", "\<\"ash\"\>", 
+   ",", "\<\"ask\"\>", ",", "\<\"asp\"\>", ",", "\<\"ass\"\>", 
+   ",", "\<\"auk\"\>", ",", "\<\"awe\"\>", ",", "\<\"awl\"\>", 
+   ",", "\<\"awn\"\>", ",", "\<\"abbe\"\>", ",", "\<\"abed\"\>", 
+   ",", "\<\"abet\"\>", ",", "\<\"able\"\>", ",", "\<\"ably\"\>", 
+   ",", "\<\"abut\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.766628895329214*^9, 3.766628923806718*^9}},
+ CellLabel->"Out[36]=",
+ CellID->1187758968,ExpressionUUID->"e2515c35-6b59-4293-8b46-2f58d2d3ae52"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "4ee649de-1d9f-4381-acb2-a4b52ca50f5a"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627,ExpressionUUID->"fd0fdfa4-63ce-4c7c-bb3b-02f609f7d500"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "f12b3e8c-8895-42db-ab48-3fc33f847821"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341,ExpressionUUID->"bff3cf66-d77f-440b-8db3-899afb3dca7e"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "ade6243c-c422-48dc-b6dd-f676deee8b6c"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783,ExpressionUUID->"74f4edf0-8096-42d0-b64e-f513353deb22"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "67b3bc83-a829-41c3-be85-c373bcc11995"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749,ExpressionUUID->"b67a6316-4722-46ec-9e96-e651732543bb"]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "f3550d02-61a1-47b9-91b3-0280a71d3a7c"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157,ExpressionUUID->"55f3bcac-1ff2-4545-ba09-c48bf8d354d6"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "7ad27514-2eda-408b-be0f-2ef059cc64c9"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759,ExpressionUUID->"c88351f2-20bf-4e98-baf6-6b3a984bcfd1"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "07100426-7995-43ad-82f2-8b3b0ab22338"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373,ExpressionUUID->"865fbfed-634f-486d-a6ae-dde4f03ed5be"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "6a715739-fb5e-4171-8168-b9d5251d4580"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318,ExpressionUUID->"87a147b6-378a-4f5e-b33c-cbf96bcb0d7e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "ee7effc7-954d-4ded-8911-b2c444ea8857"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740,ExpressionUUID->"ccf738a9-60fd-4fe2-b82d-28f6a71619a8"],
+
+Cell[TextData[StyleBox["Lets sort by length. And get the first 50. And then \
+translate into steno",
+ StripOnInput->False,
+ LineColor->RGBColor[1, 0, 1],
+ FrontFaceColor->RGBColor[1, 0, 1],
+ BackFaceColor->RGBColor[1, 0, 1],
+ GraphicsColor->RGBColor[1, 0, 1],
+ FontWeight->Normal,
+ FontColor->RGBColor[1, 0, 1]]], "Text",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellEvaluationFunction->cel`gTalker,
+ CellFrameLabels->{{None, ""}, {None, None}},
+ CellChangeTimes->{{3.7666288521735773`*^9, 3.766628859123829*^9}, {
+  3.766628926732614*^9, 3.7666289343887444`*^9}, {3.766629309108444*^9, 
+  3.7666293161862497`*^9}},
+ CellID->515610081,ExpressionUUID->"acdbe2dd-6c11-42aa-9969-46410c61712b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"longList", "=", 
+   RowBox[{"bme", "[", 
+    RowBox[{"\"\<a\>\"", ",", "\"\<\>\"", ",", "\"\<\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"englishWords", "=", 
+  RowBox[{"Take", "[", 
+   RowBox[{
+    RowBox[{"SortBy", "[", 
+     RowBox[{"longList", ",", "StringLength"}], "]"}], ",", "50"}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.766628871510687*^9, 3.766628922517357*^9}, {
+  3.7666293254862547`*^9, 3.766629336595113*^9}},
+ CellLabel->"In[45]:=",
+ CellID->762115722,ExpressionUUID->"8204b5ba-72f0-45a8-8d8a-7af4d69a0879"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"a\"\>", ",", "\<\"ad\"\>", ",", "\<\"ah\"\>", 
+   ",", "\<\"an\"\>", ",", "\<\"as\"\>", ",", "\<\"at\"\>", ",", "\<\"ax\"\>",
+    ",", "\<\"aah\"\>", ",", "\<\"ace\"\>", ",", "\<\"act\"\>", 
+   ",", "\<\"add\"\>", ",", "\<\"ado\"\>", ",", "\<\"adz\"\>", 
+   ",", "\<\"aft\"\>", ",", "\<\"age\"\>", ",", "\<\"ago\"\>", 
+   ",", "\<\"aha\"\>", ",", "\<\"aid\"\>", ",", "\<\"ail\"\>", 
+   ",", "\<\"aim\"\>", ",", "\<\"air\"\>", ",", "\<\"alb\"\>", 
+   ",", "\<\"ale\"\>", ",", "\<\"all\"\>", ",", "\<\"alp\"\>", 
+   ",", "\<\"amp\"\>", ",", "\<\"and\"\>", ",", "\<\"ant\"\>", 
+   ",", "\<\"any\"\>", ",", "\<\"ape\"\>", ",", "\<\"apt\"\>", 
+   ",", "\<\"arc\"\>", ",", "\<\"are\"\>", ",", "\<\"ark\"\>", 
+   ",", "\<\"arm\"\>", ",", "\<\"art\"\>", ",", "\<\"ash\"\>", 
+   ",", "\<\"ask\"\>", ",", "\<\"asp\"\>", ",", "\<\"ass\"\>", 
+   ",", "\<\"auk\"\>", ",", "\<\"awe\"\>", ",", "\<\"awl\"\>", 
+   ",", "\<\"awn\"\>", ",", "\<\"abbe\"\>", ",", "\<\"abed\"\>", 
+   ",", "\<\"abet\"\>", ",", "\<\"able\"\>", ",", "\<\"ably\"\>", 
+   ",", "\<\"abut\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.766628895329214*^9, 3.766628923806718*^9}, 
+   3.766629338237597*^9},
+ CellLabel->"Out[46]=",
+ CellID->908749931,ExpressionUUID->"be7d5b41-51e9-4291-906d-f3a74d276d9d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"di", "/@", "englishWords"}]], "Input",
+ CellChangeTimes->{{3.766629341260646*^9, 3.766629348200512*^9}},
+ CellLabel->"In[47]:=",
+ CellID->1930576934,ExpressionUUID->"87d68024-bab4-457f-b844-7e48b8eea9e0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A*/SP-S\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"A/AEU\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AEU\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AEU/AEU\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A*D\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A*ERBGS\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"HA*E\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"-PB\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"A/APB\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APB\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ARPB\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/AZ\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AS\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ASZ\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AZ\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/AT\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AT\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ATD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ATS\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUS\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"ABGT\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ABLGT\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AD\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/TKO\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUPBL\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AEUPBLG\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/AG\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AG\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUD\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUL\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUPL\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUR\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEL\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/UL\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AUL\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"HRAUL\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AFRP\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APL/*P\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APL/-P\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"-PBD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"-PBDZ\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"57BD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"A/APBD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ABD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APBD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APBD/-DZ\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APBDZ\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APBGD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APBLD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APBLDZ\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APBTD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"APD\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"SKP\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"SKP*\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"SKPH\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"SKPW\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"STK\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"STKP\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A*PBT\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"TKPHEU\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"TPH*EU\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"TPHEU\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUP\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"APT\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AR/KR\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ARBG\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"-R\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"R\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A*RBG\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"ARPL\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"ART\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"ARB\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"SK\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"SKW\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AS/-P\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A*S\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AU\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A*UL\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   InterpretationBox[
+    TagBox[GridBox[{
+       {""}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     
+     "Column"],
+    Column[{}]], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/PWET\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/AEUBL\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"ABL\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AEUBL\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"AEUB/HREU\"",FrameStyle -> None},
+        "Highlighted"]},
+      {
+       TemplateBox[{"\"AEUBL/HREU\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"], ",", 
+   TagBox[GridBox[{
+      {
+       TemplateBox[{"\"A/PWUT\"",FrameStyle -> None},
+        "Highlighted"]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}], "}"}]], "Output",
+ CellChangeTimes->{3.766629349717108*^9},
+ CellLabel->"Out[47]=",
+ CellID->782006719,ExpressionUUID->"0af00616-b0a9-4bf4-8f63-727122e29a2f"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1280, 1391},
+WindowMargins->{{Automatic, 0}, {Automatic, -1}},
+CellContext->"Global`",
+Background->GrayLevel[1],
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ExtendedExamples"->{
+  Cell[10181, 304, 155, 2, 56, "ExtendedExamplesSection",ExpressionUUID->"82d03e33-096e-437e-9295-0f38d17ad936",
+   CellTags->"ExtendedExamples",
+   CellID->1854448968]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ExtendedExamples", 37279, 1136}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 600, 14, 24, "History",ExpressionUUID->"f1448439-3b2e-4412-9dea-63e4b8b750e7",
+ CellID->1247902091],
+Cell[CellGroupData[{
+Cell[1183, 38, 123, 1, 29, "CategorizationSection",ExpressionUUID->"e306eb37-3631-47ae-9368-e14f2e4a6f2a",
+ CellID->1122911449],
+Cell[1309, 41, 134, 2, 30, "Categorization",ExpressionUUID->"fe262bc1-f39e-42b1-8070-11939f178515",
+ CellID->686433507],
+Cell[1446, 45, 133, 2, 30, "Categorization",ExpressionUUID->"f951f81c-2b72-423b-9c39-453bed9ed883",
+ CellID->605800465],
+Cell[1582, 49, 130, 2, 30, "Categorization",ExpressionUUID->"d4ee454a-c379-4fcc-93a1-bccf30d50089",
+ CellID->468444828],
+Cell[1715, 53, 113, 1, 30, "Categorization",ExpressionUUID->"b148fcfa-fb67-4cd0-87f3-333249f9e372"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1865, 59, 110, 1, 29, "KeywordsSection",ExpressionUUID->"64244637-17b0-49a5-85b6-4d4c689b9b65",
+ CellID->477174294],
+Cell[1978, 62, 100, 1, 19, "Keywords",ExpressionUUID->"cab10b5b-6d37-42bc-b1ff-37eebb972836",
+ CellID->1164421360]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2115, 68, 120, 1, 29, "TemplatesSection",ExpressionUUID->"24fd7507-2482-4dc0-aefc-b3862bf3fe11",
+ CellID->1872225408],
+Cell[2238, 71, 149, 2, 27, "Template",ExpressionUUID->"cd322c18-9913-4e7c-88ac-a27647762c4c",
+ CellID->1562036412],
+Cell[2390, 75, 137, 2, 27, "Template",ExpressionUUID->"603b2c86-c5f1-4057-ae5a-07c31a9f4c55",
+ CellID->158391909],
+Cell[2530, 79, 136, 2, 27, "Template",ExpressionUUID->"a5ddbe67-4573-4703-85e5-6ef10bca561f",
+ CellID->1360575930],
+Cell[2669, 83, 137, 2, 27, "Template",ExpressionUUID->"a80a3365-c9e2-4d85-81a5-e616a91ca399",
+ CellID->793782254]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2843, 90, 108, 1, 29, "DetailsSection",ExpressionUUID->"47d37b08-0f9d-4165-bffe-1e6d29dddfdb",
+ CellID->307771771],
+Cell[2954, 93, 118, 2, 30, "Details",ExpressionUUID->"827e632a-dfef-479d-889d-3b1ed5214b2d",
+ CellID->670882175],
+Cell[3075, 97, 124, 2, 30, "Details",ExpressionUUID->"7fc86428-301f-4a0b-afc3-c2ded70bd030",
+ CellID->350963985],
+Cell[3202, 101, 119, 2, 30, "Details",ExpressionUUID->"edd0774c-294e-47e6-8590-8797c7661b3a",
+ CellID->8391405],
+Cell[3324, 105, 124, 2, 30, "Details",ExpressionUUID->"acd730be-2ab9-4d11-8d19-f3caaac4725f",
+ CellID->3610269],
+Cell[3451, 109, 116, 2, 30, "Details",ExpressionUUID->"43c4adef-4e11-4cff-b77f-2a934c57e3db",
+ CellID->401364205],
+Cell[3570, 113, 116, 2, 30, "Details",ExpressionUUID->"1951f59a-ed3b-461a-8cbc-b371f0dce338",
+ CellID->350204745],
+Cell[3689, 117, 118, 2, 30, "Details",ExpressionUUID->"8e008d40-1c6d-46a8-a2dd-d7adfc23128a",
+ CellID->732958810],
+Cell[3810, 121, 133, 2, 30, "Details",ExpressionUUID->"28cfb103-b383-4f66-a41a-480c180b0956",
+ CellID->222905350],
+Cell[3946, 125, 122, 2, 30, "Details",ExpressionUUID->"057e9a27-9441-44a4-b29d-60b8560544bd",
+ CellID->240026365]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4105, 132, 101, 1, 63, "ObjectName",ExpressionUUID->"1ae6e70e-4260-411e-8a73-4e1f7d65cf75",
+ CellID->1224892054],
+Cell[4209, 135, 562, 12, 78, "Usage",ExpressionUUID->"14f0a991-285f-4cef-b62f-e2f5572146b9",
+ CellID->982511436],
+Cell[4774, 149, 97, 1, 25, "Notes",ExpressionUUID->"aa180d1c-8d8f-451b-933f-c59fae646284",
+ CellID->1067943069]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4908, 155, 112, 1, 44, "TutorialsSection",ExpressionUUID->"04de785e-7f68-4d06-8d8f-1e4c8e4f7fc5",
+ CellID->250839057],
+Cell[5023, 158, 100, 1, 16, "Tutorials",ExpressionUUID->"3a5125d2-2b2d-4cd1-bd14-76263711e3a2",
+ CellID->341631938]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5160, 164, 138, 1, 31, "RelatedDemonstrationsSection",ExpressionUUID->"275b0d85-9ff5-40d3-8a2e-fa86f553badd",
+ CellID->1268215905],
+Cell[5301, 167, 113, 1, 16, "RelatedDemonstrations",ExpressionUUID->"9615b7d9-7b5e-481f-bf40-3d9e6ede5eff",
+ CellID->1129518860]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5451, 173, 120, 1, 31, "RelatedLinksSection",ExpressionUUID->"1d462b3d-735b-43fb-8b65-37b59d6ecdcc",
+ CellID->1584193535],
+Cell[5574, 176, 104, 1, 16, "RelatedLinks",ExpressionUUID->"fee9ac79-d028-4ff9-91cf-8df17c5a7c4c",
+ CellID->1038487239]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5715, 182, 110, 1, 31, "SeeAlsoSection",ExpressionUUID->"ff9a0763-5c4b-4ff0-903c-63b220985325",
+ CellID->1255426704],
+Cell[5828, 185, 98, 1, 16, "SeeAlso",ExpressionUUID->"5dede528-d63d-4167-9bbb-d5900c251264",
+ CellID->929782353]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5963, 191, 112, 1, 31, "MoreAboutSection",ExpressionUUID->"5e593da2-c9a9-4893-9324-7589fd9c7213",
+ CellID->38303248],
+Cell[6078, 194, 101, 1, 16, "MoreAbout",ExpressionUUID->"05ff9af2-b5aa-409d-af37-82a6c210ff8c",
+ CellID->1665078683]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6216, 200, 411, 11, 70, "PrimaryExamplesSection",ExpressionUUID->"ffdfbe94-98f2-4d4a-9759-ee06ae3d0984",
+ CellID->880084151],
+Cell[6630, 213, 260, 5, 27, "Input",ExpressionUUID->"8be29771-d0d3-43d8-97a4-a6819f7d0cfb",
+ CellID->368203437],
+Cell[6893, 220, 602, 14, 20, "Text",ExpressionUUID->"d7ffef8e-03a5-4568-a8d1-2b3f3374f243",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellID->196754584],
+Cell[CellGroupData[{
+Cell[7520, 238, 281, 5, 27, "Input",ExpressionUUID->"acde1a91-e098-496c-af63-261057eeacf1",
+ CellID->1682815617],
+Cell[7804, 245, 587, 11, 65, "Output",ExpressionUUID->"74bccd40-0328-4387-be05-a401c61d6ff4",
+ CellID->2022350414]
+}, Open  ]],
+Cell[8406, 259, 862, 18, 20, "Text",ExpressionUUID->"c3688ce2-89ab-406e-b63f-e76a50cb843f",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellID->252948048],
+Cell[CellGroupData[{
+Cell[9293, 281, 325, 6, 27, "Input",ExpressionUUID->"25a6f54d-9dda-4be4-9059-a728cdac077b",
+ CellID->40719666],
+Cell[9621, 289, 511, 9, 46, "Output",ExpressionUUID->"81c01953-cdfd-4c6d-b9b1-678ef098b86b",
+ CellID->429680511]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10181, 304, 155, 2, 56, "ExtendedExamplesSection",ExpressionUUID->"82d03e33-096e-437e-9295-0f38d17ad936",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+Cell[CellGroupData[{
+Cell[10361, 310, 242, 5, 33, "ExampleSection",ExpressionUUID->"47b90f62-c378-44ef-a3c2-b300bcf4a1bc",
+ CellID->1293636265],
+Cell[10606, 317, 622, 14, 20, "Text",ExpressionUUID->"770c800c-0ca2-474e-b184-2d37ee815055",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellID->448045865],
+Cell[CellGroupData[{
+Cell[11253, 335, 494, 13, 47, "Input",ExpressionUUID->"4c14f3b9-7b2a-4046-bf4f-8a49b26e21f1",
+ CellID->216791442],
+Cell[11750, 350, 1281, 21, 84, "Output",ExpressionUUID->"e2515c35-6b59-4293-8b46-2f58d2d3ae52",
+ CellID->1187758968]
+}, Open  ]]
+}, Open  ]],
+Cell[13058, 375, 265, 5, 33, "ExampleSection",ExpressionUUID->"fd0fdfa4-63ce-4c7c-bb3b-02f609f7d500",
+ CellID->1020263627],
+Cell[CellGroupData[{
+Cell[13348, 384, 244, 5, 21, "ExampleSection",ExpressionUUID->"bff3cf66-d77f-440b-8db3-899afb3dca7e",
+ CellID->2061341341],
+Cell[13595, 391, 247, 5, 24, "ExampleSubsection",ExpressionUUID->"74f4edf0-8096-42d0-b64e-f513353deb22",
+ CellID->1757724783],
+Cell[13845, 398, 247, 5, 20, "ExampleSubsection",ExpressionUUID->"b67a6316-4722-46ec-9e96-e651732543bb",
+ CellID->1295379749]
+}, Closed]],
+Cell[14107, 406, 248, 5, 21, "ExampleSection",ExpressionUUID->"55f3bcac-1ff2-4545-ba09-c48bf8d354d6",
+ CellID->258228157],
+Cell[14358, 413, 259, 5, 21, "ExampleSection",ExpressionUUID->"c88351f2-20bf-4e98-baf6-6b3a984bcfd1",
+ CellID->2123667759],
+Cell[14620, 420, 252, 5, 21, "ExampleSection",ExpressionUUID->"865fbfed-634f-486d-a6ae-dde4f03ed5be",
+ CellID->1305812373],
+Cell[14875, 427, 257, 5, 21, "ExampleSection",ExpressionUUID->"87a147b6-378a-4f5e-b33c-cbf96bcb0d7e",
+ CellID->1653164318],
+Cell[CellGroupData[{
+Cell[15157, 436, 249, 5, 21, "ExampleSection",ExpressionUUID->"ccf738a9-60fd-4fe2-b82d-28f6a71619a8",
+ CellID->589267740],
+Cell[15409, 443, 706, 16, 20, "Text",ExpressionUUID->"acdbe2dd-6c11-42aa-9969-46410c61712b",
+ Evaluatable->True,
+ CellGroupingRules->"InputGroupin",
+ CellID->515610081],
+Cell[CellGroupData[{
+Cell[16140, 463, 583, 15, 47, "Input",ExpressionUUID->"8204b5ba-72f0-45a8-8d8a-7af4d69a0879",
+ CellID->762115722],
+Cell[16726, 480, 1306, 22, 84, "Output",ExpressionUUID->"be7d5b41-51e9-4291-906d-f3a74d276d9d",
+ CellID->908749931]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18069, 507, 228, 4, 27, "Input",ExpressionUUID->"87d68024-bab4-457f-b844-7e48b8eea9e0",
+ CellID->1930576934],
+Cell[18300, 513, 18500, 604, 1115, "Output",ExpressionUUID->"0af00616-b0a9-4bf4-8f63-727122e29a2f",
+ CellID->782006719]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

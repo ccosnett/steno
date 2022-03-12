@@ -1,0 +1,197 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7292,        189]
+NotebookOptionsPosition[      6826,        171]
+NotebookOutlinePosition[      7207,        188]
+CellTagsIndexPosition[      7164,        185]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ideal", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"(", GridBox[{
+        {"\"\<half\>\"", "\"\<hag\>\"", "\"\<hat\>\"", "\"\<had\>\""},
+        {"\"\<has\>\"", "\"\<hop\>\"", "\"\<hog\>\"", "\"\<hot\>\""},
+        {"\"\<her\>\"", "\"\<hell\>\"", "\"\<head\>\"", "\"\<huff\>\""},
+        {"\"\<hub\>\"", "\"\<hull\>\"", "\"\<hug\>\"", "\"\<hut\>\""}
+       }], ")"}], "//", "Flatten"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lis", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"bad", ":=", 
+   RowBox[{"Do", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"eDiminished", ";", 
+       RowBox[{"Pause", "[", ".2", "]"}]}], ")"}], ",", "3"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"good", ":=", 
+   RowBox[{"dMinor", "[", 
+    RowBox[{".1", ",", 
+     RowBox[{"Length", "[", "lis", "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"upperQ", "[", "str_", "]"}], ":=", 
+     RowBox[{"ContainsAny", "[", 
+      RowBox[{
+       RowBox[{"Characters", "[", "str", "]"}], ",", 
+       RowBox[{"ToUpperCase", "[", 
+        RowBox[{"Alphabet", "[", "]"}], "]"}]}], "]"}]}], ";"}],
+   FontSize->12], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"{", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"InputField", "[", 
+    RowBox[{
+     RowBox[{"Dynamic", "[", "x", "]"}], ",", "String", ",", 
+     RowBox[{"ContinuousAction", "->", "True"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Not", "[", 
+         RowBox[{"x", "===", "\"\< \>\""}], "]"}], "\[And]", 
+        RowBox[{"ContainsAny", "[", 
+         RowBox[{
+          RowBox[{"Characters", "[", "x", "]"}], ",", 
+          RowBox[{"{", "\"\< \>\"", "}"}]}], "]"}]}], ")"}], ",", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"upperQ", "[", "x", "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"x", "=", "\"\<\>\""}], ";", "bad", ";", 
+          RowBox[{"lis", "=", 
+           RowBox[{"{", "}"}]}]}], ")"}], ",", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"AppendTo", "[", 
+           RowBox[{"lis", ",", 
+            RowBox[{"x", "//", "StringTrim"}]}], "]"}], ";", 
+          RowBox[{"Speak", "[", "x", "]"}], ";", 
+          RowBox[{"Pause", "[", ".2", "]"}], ";", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"ideal", "===", "lis"}], ",", 
+            RowBox[{"Do", "[", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"good", ";", 
+                RowBox[{"Pause", "[", ".1", "]"}]}], ")"}], ",", "30"}], 
+             "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"SubsetQ", "[", 
+              RowBox[{"ideal", ",", "lis"}], "]"}], "\[And]", 
+             RowBox[{"DuplicateFreeQ", "[", "lis", "]"}]}], ",", 
+            "\[IndentingNewLine]", "good", ",", "\[IndentingNewLine]", 
+            RowBox[{"(", 
+             RowBox[{"bad", ";", 
+              RowBox[{"lis", "=", 
+               RowBox[{"{", "}"}]}]}], ")"}]}], "]"}], ";", 
+          RowBox[{"x", "=", "\"\<\>\""}]}], ")"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", "x"}], "]"}], "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]", "}"}]}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765798291840516*^9, 3.76579830018512*^9}, 
+   3.765798513152731*^9, {3.765798852789351*^9, 3.765798876590151*^9}, {
+   3.765798916479268*^9, 3.765798933270568*^9}, {3.76579902274013*^9, 
+   3.765799043378112*^9}, {3.765799204840247*^9, 3.7657992074593077`*^9}, {
+   3.765799298904316*^9, 3.765799431276922*^9}, {3.76579946825373*^9, 
+   3.765799477412218*^9}, {3.76579954412115*^9, 3.7657995502747793`*^9}, {
+   3.765799606201891*^9, 3.765799646384618*^9}, {3.765799681195366*^9, 
+   3.765799690779035*^9}, {3.7657998113275537`*^9, 3.765799880799505*^9}, {
+   3.7657999363859377`*^9, 3.765799953920168*^9}, {3.765800077573535*^9, 
+   3.76580011320441*^9}, 3.765800172176371*^9, {3.765800247040144*^9, 
+   3.765800286041581*^9}, {3.7658003334821033`*^9, 3.765800430004375*^9}, {
+   3.765800485135429*^9, 3.765800512630266*^9}, {3.76580219523602*^9, 
+   3.765802208290551*^9}, 3.76580379138268*^9, {3.765804156742731*^9, 
+   3.765804292260803*^9}, {3.765804561631921*^9, 3.765804650228827*^9}, {
+   3.765804720803195*^9, 3.7658048297856913`*^9}, {3.7658051430434427`*^9, 
+   3.765805143674712*^9}},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[32]:=",ExpressionUUID->"9a3b8a16-e069-4fc3-8dab-5b355f0babe2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   InputFieldBox[Dynamic[$CellContext`x], String,
+    ContinuousAction->True], ",", 
+   DynamicBox[ToBoxes[
+     If[
+      And[
+       Not[$CellContext`x === " "], 
+       ContainsAny[
+        Characters[$CellContext`x], {" "}]], 
+      If[
+       $CellContext`upperQ[$CellContext`x], $CellContext`x = 
+        ""; $CellContext`bad; $CellContext`lis = {}, 
+       AppendTo[$CellContext`lis, 
+         StringTrim[$CellContext`x]]; Speak[$CellContext`x]; Pause[0.2]; 
+       If[$CellContext`ideal === $CellContext`lis, 
+         Do[$CellContext`good; Pause[0.1], 30]]; If[
+         And[
+          SubsetQ[$CellContext`ideal, $CellContext`lis], 
+          
+          DuplicateFreeQ[$CellContext`lis]], $CellContext`good, \
+$CellContext`bad; $CellContext`lis = {}]; $CellContext`x = 
+        ""], $CellContext`x], StandardForm],
+    ImageSizeCache->{0., {0., 13.}}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7658037961210423`*^9, 3.765804295061347*^9, 
+  3.7658046542326193`*^9, 3.7658047700732307`*^9, 3.7658048326633673`*^9, 
+  3.765805146164792*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"b1556e8d-7b2b-415b-a617-26d6ffc2c7e0"]
+}, Open  ]]
+},
+WindowSize->{1280, 1391},
+WindowMargins->{{Automatic, 0}, {Automatic, -1}},
+Background->GrayLevel[1],
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5060, 116, 1343, "Input",ExpressionUUID->"9a3b8a16-e069-4fc3-8dab-5b355f0babe2"],
+Cell[5643, 140, 1167, 28, 140, "Output",ExpressionUUID->"b1556e8d-7b2b-415b-a617-26d6ffc2c7e0"]
+}, Open  ]]
+}
+]
+*)
+

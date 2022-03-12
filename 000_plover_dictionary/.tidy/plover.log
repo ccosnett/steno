@@ -1,0 +1,140 @@
+2019-05-01 14:18:48,321 [MainThread] INFO: Plover 3.1.1
+2019-05-01 14:18:48,376 [MainThread] INFO: copying /Applications/plover.app/Contents/Resources/lib/python2.7/plover/assets/commands.json to /Users/johncosnett/Library/Application Support/plover/commands.json
+2019-05-01 14:18:48,377 [MainThread] INFO: copying /Applications/plover.app/Contents/Resources/lib/python2.7/plover/assets/main.json to /Users/johncosnett/Library/Application Support/plover/main.json
+2019-05-01 14:18:48,385 [MainThread] INFO: copying /Applications/plover.app/Contents/Resources/lib/python2.7/plover/assets/user.json to /Users/johncosnett/Library/Application Support/plover/user.json
+2019-05-01 14:18:48,396 [MainThread] ERROR: engine initialization failed
+Traceback (most recent call last):
+  File "plover/gui/main.pyc", line 241, in __init__
+  File "plover/app.pyc", line 37, in init_engine
+  File "plover/app.pyc", line 57, in update_engine
+  File "plover/app.pyc", line 179, in set_machine
+  File "plover/machine/keyboard.pyc", line 56, in start_capture
+  File "plover/oslayer/osxkeyboardcontrol.pyc", line 237, in __init__
+Exception: Enable access for assistive devices.
+2019-05-01 15:12:11,968 [MainThread] INFO: Plover 3.1.1
+2019-05-01 15:12:12,052 [MainThread] ERROR: engine initialization failed
+Traceback (most recent call last):
+  File "plover/gui/main.pyc", line 241, in __init__
+  File "plover/app.pyc", line 37, in init_engine
+  File "plover/app.pyc", line 57, in update_engine
+  File "plover/app.pyc", line 179, in set_machine
+  File "plover/machine/keyboard.pyc", line 56, in start_capture
+  File "plover/oslayer/osxkeyboardcontrol.pyc", line 237, in __init__
+Exception: Enable access for assistive devices.
+2019-05-01 15:14:30,678 [MainThread] INFO: Plover 3.1.1
+2019-05-01 15:14:32,485 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-01 15:14:32,485 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:14:32,485 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:18:06,910 [MainThread] INFO: Plover 3.1.1
+2019-05-01 15:18:08,947 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-01 15:18:08,947 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:18:08,947 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:18:14,495 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:18:14,495 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:23:24,807 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:23:24,807 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:23:51,742 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:23:51,742 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:36:20,668 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:36:20,669 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:37:10,062 [MainThread] INFO: Plover 3.1.1
+2019-05-01 15:37:11,645 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-01 15:37:11,645 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:37:11,646 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:37:28,156 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:37:28,157 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:39:50,016 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:39:50,016 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:41:15,995 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:41:15,995 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:41:16,555 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:41:16,555 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 15:50:04,900 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 15:50:04,900 [MainThread] INFO: enable_translation_logging(False)
+2019-05-01 19:11:11,324 [MainThread] INFO: Plover 3.1.1
+2019-05-01 19:11:12,736 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-01 19:11:12,736 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-01 19:11:12,736 [MainThread] INFO: enable_translation_logging(False)
+2019-05-02 06:35:58,251 [MainThread] INFO: Plover 3.1.1
+2019-05-02 06:35:59,759 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-02 06:35:59,759 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-02 06:35:59,759 [MainThread] INFO: enable_translation_logging(False)
+2019-05-02 06:46:09,125 [MainThread] INFO: Plover 3.1.1
+2019-05-02 06:46:10,551 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-02 06:46:10,551 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-02 06:46:10,551 [MainThread] INFO: enable_translation_logging(False)
+2019-05-02 06:50:32,195 [MainThread] INFO: Plover 3.1.1
+2019-05-02 06:50:33,616 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-02 06:50:33,616 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-02 06:50:33,616 [MainThread] INFO: enable_translation_logging(False)
+2019-05-02 06:50:56,830 [MainThread] INFO: Plover 3.1.1
+2019-05-02 06:50:58,234 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-02 06:50:58,234 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-02 06:50:58,234 [MainThread] INFO: enable_translation_logging(False)
+2019-05-02 08:12:17,974 [MainThread] INFO: Plover 3.1.1
+2019-05-02 08:12:19,403 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-02 08:12:19,403 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-02 08:12:19,403 [MainThread] INFO: enable_translation_logging(False)
+2019-05-02 11:53:29,039 [MainThread] INFO: Plover 3.1.1
+2019-05-02 11:53:30,498 [MainThread] INFO: set_stroke_filename(/Users/johncosnett/Library/Application Support/plover/strokes.log)
+2019-05-02 11:53:30,498 [MainThread] INFO: enable_stroke_logging(False)
+2019-05-02 11:53:30,499 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:00:51,845 [MainThread] INFO: Plover 3.1.1
+2019-06-01 09:00:51,898 [MainThread] INFO: copying /usr/lib/python2.7/dist-packages/plover/assets/commands.json to /home/conor/Dropbox/05_PROGRAMS/17_steno/000_plover_dictionary/commands.json
+2019-06-01 09:00:51,898 [MainThread] INFO: copying /usr/lib/python2.7/dist-packages/plover/assets/main.json to /home/conor/Dropbox/05_PROGRAMS/17_steno/000_plover_dictionary/main.json
+2019-06-01 09:00:51,918 [MainThread] INFO: 56 custom mappings(s)
+2019-06-01 09:00:51,934 [MainThread] WARNING: Can't open serial port
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/plover/machine/base.py", line 184, in start_capture
+    self.serial_port = serial.Serial(**self.serial_params)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 180, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 294, in open
+    raise SerialException(msg.errno, "could not open port %s: %s" % (self._port, msg))
+SerialException: [Errno 2] could not open port /dev/cu.usbmodem3: [Errno 2] No such file or directory: '/dev/cu.usbmodem3'
+2019-06-01 09:00:53,066 [MainThread] INFO: set_stroke_filename(/home/conor/Dropbox/05_PROGRAMS/17_steno/000_plover_dictionary/strokes.log)
+2019-06-01 09:00:53,066 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:00:53,067 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:01:09,852 [MainThread] WARNING: Can't open serial port
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/plover/machine/base.py", line 184, in start_capture
+    self.serial_port = serial.Serial(**self.serial_params)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 180, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 294, in open
+    raise SerialException(msg.errno, "could not open port %s: %s" % (self._port, msg))
+SerialException: [Errno 2] could not open port /dev/cu.usbmodem3: [Errno 2] No such file or directory: '/dev/cu.usbmodem3'
+2019-06-01 09:01:09,869 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:01:09,870 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:01:12,393 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:01:12,393 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:01:16,687 [MainThread] INFO: Plover 3.1.1
+2019-06-01 09:01:16,750 [MainThread] INFO: 56 custom mappings(s)
+2019-06-01 09:01:16,765 [MainThread] WARNING: Can't open serial port
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/plover/machine/base.py", line 184, in start_capture
+    self.serial_port = serial.Serial(**self.serial_params)
+  File "/usr/lib/python2.7/dist-packages/serial/serialutil.py", line 180, in __init__
+    self.open()
+  File "/usr/lib/python2.7/dist-packages/serial/serialposix.py", line 294, in open
+    raise SerialException(msg.errno, "could not open port %s: %s" % (self._port, msg))
+SerialException: [Errno 2] could not open port /dev/cu.usbmodem3: [Errno 2] No such file or directory: '/dev/cu.usbmodem3'
+2019-06-01 09:01:17,863 [MainThread] INFO: set_stroke_filename(/home/conor/Dropbox/05_PROGRAMS/17_steno/000_plover_dictionary/strokes.log)
+2019-06-01 09:01:17,863 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:01:17,864 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:01:30,548 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:01:30,549 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:03:52,042 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:03:52,042 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:04:13,382 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:04:13,382 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:04:20,578 [MainThread] INFO: Plover 3.1.1
+2019-06-01 09:04:20,635 [MainThread] INFO: 56 custom mappings(s)
+2019-06-01 09:04:21,657 [MainThread] INFO: set_stroke_filename(/home/conor/Dropbox/05_PROGRAMS/17_steno/000_plover_dictionary/strokes.log)
+2019-06-01 09:04:21,658 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:04:21,658 [MainThread] INFO: enable_translation_logging(False)
+2019-06-01 09:22:24,232 [MainThread] INFO: Plover 3.1.1
+2019-06-01 09:22:24,284 [MainThread] INFO: 56 custom mappings(s)
+2019-06-01 09:22:25,292 [MainThread] INFO: set_stroke_filename(/home/conor/Dropbox/05_PROGRAMS/17_steno/000_plover_dictionary/strokes.log)
+2019-06-01 09:22:25,293 [MainThread] INFO: enable_stroke_logging(False)
+2019-06-01 09:22:25,293 [MainThread] INFO: enable_translation_logging(False)

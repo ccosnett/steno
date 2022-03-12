@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6875,        183]
+NotebookOptionsPosition[      5627,        155]
+NotebookOutlinePosition[      5970,        170]
+CellTagsIndexPosition[      5927,        167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   StyleBox["Clear",
+    FontSize->12], 
+   StyleBox["[",
+    FontSize->12], 
+   StyleBox["f",
+    FontSize->12], "]"}], ";"}], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{
+   "file", "=", 
+    "\"\</home/conor/Dropbox/05_PROGRAMS/17_steno/stroke_sonification/strokes.\
+log\>\""}], ";"}],
+  FontSize->12], "\[IndentingNewLine]", 
+ RowBox[{"Dynamic", "[", 
+  RowBox[{
+   RowBox[{"Refresh", "[", 
+    RowBox[{
+     RowBox[{"modificationDate", ":=", 
+      RowBox[{"FileDate", "[", 
+       RowBox[{"file", ",", "\"\<Modification\>\""}], "]"}]}], ";", 
+     RowBox[{"Import", "[", 
+      RowBox[{"file", ",", "\"\<List\>\""}], "]"}]}], "]"}], " ", 
+   "\[IndentingNewLine]", ",", 
+   RowBox[{"TrackedSymbols", "\[RuleDelayed]", 
+    RowBox[{"{", "modificationDate", "}"}]}], ",", 
+   RowBox[{"UpdateInterval", "\[Rule]", "0"}]}], "]"}]}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+   3.7656906024434443`*^9, 3.765690603751608*^9}, {3.8091064480356197`*^9, 
+   3.809106455050597*^9}, 3.809106522718823*^9, {3.8091065591374083`*^9, 
+   3.809106727719501*^9}, {3.8091078694225492`*^9, 3.809107885152347*^9}, {
+   3.809108071242961*^9, 3.809108072674831*^9}, {3.809108189346272*^9, 
+   3.809108255502494*^9}, {3.809154728953442*^9, 3.8091547499753323`*^9}, {
+   3.809154847260747*^9, 3.809154859288239*^9}, {3.809154915316168*^9, 
+   3.809154957937339*^9}, {3.809155021465637*^9, 3.8091550222621717`*^9}, 
+   3.809170316048677*^9},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[19]:=",ExpressionUUID->"daf610e7-660c-4b4f-8446-ad419d20d6da"],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[
+   Refresh[$CellContext`modificationDate := 
+     FileDate[truthtabler`file, "Modification"]; 
+    Import[truthtabler`file, "List"]], StandardForm],
+  ImageSizeCache->{1408.6875, {404., 27.}},
+  TrackedSymbols:>{$CellContext`modificationDate},
+  UpdateInterval->0]], "Output",
+ CellChangeTimes->{3.809170434140167*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"b340f8d5-3dbc-4ada-930e-c12fa53be511"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"in", "=", 
+    RowBox[{"Last", "@", 
+     RowBox[{"Import", "[", 
+      RowBox[{"file", ",", "\"\<List\>\""}], "]"}]}]}], ";"}],
+  FontSize->12], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   StyleBox["in2",
+    FontSize->12], 
+   StyleBox["=",
+    FontSize->12], 
+   RowBox[{
+    StyleBox["First",
+     FontSize->12], "[", 
+    RowBox[{"StringCases", "[", 
+     RowBox[{"in", ",", 
+      RowBox[{"\"\<[\>\"", "~~", "__", "~~", "\"\<]\>\""}]}], "]"}], " ", 
+    "]"}]}], ";"}], "\[IndentingNewLine]", "in2"}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+  3.7656906024434443`*^9, 3.765690603751608*^9}, {3.8091550478469667`*^9, 
+  3.809155197791788*^9}, {3.8091552302866364`*^9, 3.809155245841194*^9}, {
+  3.8091552989093237`*^9, 3.809155339513401*^9}, {3.809170468348299*^9, 
+  3.809170480152607*^9}},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[25]:=",ExpressionUUID->"d621d2d9-e8a5-4756-acbd-4d67f15458a8"],
+
+Cell[BoxData["\<\"['P-', 'W-', 'R-', 'A-', 'O-']\"\>"], "Output",
+ CellChangeTimes->{
+  3.809155339758174*^9, {3.809170319282158*^9, 3.809170346611947*^9}, {
+   3.8091704739802923`*^9, 3.809170480444096*^9}},
+ CellLabel->"Out[27]=",ExpressionUUID->"c8ed03c2-e9c2-4514-a3ae-5ca03a7f7545"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"ImportString", "[", 
+  RowBox[{"in2", ",", "\"\<PythonExpression\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.809155351272954*^9, 3.8091553636471167`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"7d290f20-e253-4812-944b-853bbfd312bd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "\"\<P-\>\"", ",", "\"\<W-\>\"", ",", "\"\<R-\>\"", ",", "\"\<A-\>\"", ",", 
+   "\"\<O-\>\""}], "}"}]], "Input",ExpressionUUID->"61961556-0f17-4ccf-a154-\
+6e6bd676b0b7"],
+
+Cell[BoxData[
+ RowBox[{"Speak", "[", "\"\<pwrao\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8091704013343287`*^9, 3.809170407397727*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"d05dc98b-a5a3-4a3c-b4db-e74807c41125"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.809170355540936*^9, 
+  3.809170355558238*^9}},ExpressionUUID->"9ecd78c4-f30b-4120-9a29-\
+c3bf9f039e42"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RegisterExternalEvaluator", "[", 
+  RowBox[{"\"\<Python\>\"", ",", "\"\</home/conor/anaconda3/bin/python\>\""}],
+   "]"}]], "Input",
+ CellChangeTimes->{{3.809155366487918*^9, 3.809155386328238*^9}, {
+  3.809170304488826*^9, 3.809170306229245*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"e448dcc8-9689-43ff-b568-f02e84d0c4af"],
+
+Cell[BoxData["\<\"63d141e1-4a59-40e2-83e3-8416b94f4274\"\>"], "Output",
+ CellChangeTimes->{3.8091703083451443`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"3ca2ae0b-0eda-4a74-b46e-ae33c01c642e"]
+}, Open  ]]
+},
+WindowSize->{1688, 1388},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"DefaultModified2.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1728, 41, 309, "Input",ExpressionUUID->"daf610e7-660c-4b4f-8446-ad419d20d6da"],
+Cell[2311, 65, 432, 9, 495, "Output",ExpressionUUID->"b340f8d5-3dbc-4ada-930e-c12fa53be511"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2780, 79, 1107, 29, 221, "Input",ExpressionUUID->"d621d2d9-e8a5-4756-acbd-4d67f15458a8"],
+Cell[3890, 110, 287, 4, 155, "Output",ExpressionUUID->"c8ed03c2-e9c2-4514-a3ae-5ca03a7f7545"]
+}, Open  ]],
+Cell[4192, 117, 260, 4, 61, "Input",ExpressionUUID->"7d290f20-e253-4812-944b-853bbfd312bd"],
+Cell[4455, 123, 211, 5, 61, "Input",ExpressionUUID->"61961556-0f17-4ccf-a154-6e6bd676b0b7"],
+Cell[4669, 130, 217, 3, 61, "Input",ExpressionUUID->"d05dc98b-a5a3-4a3c-b4db-e74807c41125"],
+Cell[4889, 135, 152, 3, 61, InheritFromParent,ExpressionUUID->"9ecd78c4-f30b-4120-9a29-c3bf9f039e42"],
+Cell[CellGroupData[{
+Cell[5066, 142, 349, 6, 61, "Input",ExpressionUUID->"e448dcc8-9689-43ff-b568-f02e84d0c4af"],
+Cell[5418, 150, 193, 2, 69, "Output",ExpressionUUID->"3ca2ae0b-0eda-4a74-b46e-ae33c01c642e"]
+}, Open  ]]
+}
+]
+*)
+

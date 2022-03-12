@@ -1,0 +1,26 @@
+BeginPackage["steno4`"];
+Begin["`Private`"];
+listOfKeys={
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "Alt_L",
+  "ampersand",
+  "Return",
+  "Left",
+  "Right",
+  "Up",
+  "Down",
+  "Undo",
+  "atilde",
+  "Execute",
+  "Home",
+  "plus",
+  "Shift_L"
+};
+End[];
+EndPackage[];

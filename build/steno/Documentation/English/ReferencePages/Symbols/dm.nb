@@ -1,0 +1,606 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20502,        597]
+NotebookOptionsPosition[     16839,        510]
+NotebookOutlinePosition[     18955,        567]
+CellTagsIndexPosition[     18870,        562]
+WindowTitle->dm
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["STENO SYMBOL", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Related Guides",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Related Guides", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"stenography\"\>":>
+       Documentation`HelpLookup["paclet:steno/guide/stenography"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"MoreAbout"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"steno/ref/dm\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["steno/ref/dm"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/steno/ref/dm.html"], 
+                StandardForm]], "Input", TextClipboardType -> "PlainText"]}, 
+            Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$14212], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], "steno/ref/dm", 
+             ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell["dm", "ObjectName"],
+ Cell[BoxData[
+  TemplateBox[{8},
+   "Spacer1"]]],
+ Cell[BoxData[""], "ObjectNameTranslation"]
+}], "ObjectNameGrid"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{Cell[
+          TextData["dm"]],"paclet:steno/ref/dm"},
+        "RefLink",
+        BaseStyle->{"InlineFormula"}], "[", "]"}]], "InlineFormula"],
+     " \[LineSeparator]This Cell Prints the latest version of my steno \
+learning game."
+    }]]}
+  }]], "Usage",
+ GridBoxOptions->{
+ GridBoxBackground->{
+  "Columns" -> {{None}}, "ColumnsIndexed" -> {}, "Rows" -> {{None}}, 
+   "RowsIndexed" -> {}}},
+ CellID->982511436]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{6},
+   "Spacer1"]]],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CellTags->"PrimaryExamplesSection",
+ CellID->1703799352],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CellID->1208759966],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<steno`\>\"", "]"}], ";"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2050583370],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"n", "-"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"ideal1", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<noun\>\""},
+           {"\"\<inhibit\>\""},
+           {"\"\<nudge\>\""},
+           {"\"\<notes\>\""},
+           {"\"\<knack\>\""},
+           {"\"\<enacts\>\""},
+           {"\"\<neck\>\""},
+           {"\"\<known\>\""},
+           {"\"\<knock\>\""},
+           {"\"\<gnome\>\""},
+           {"\"\<noise\>\""},
+           {"\"\<novice\>\""},
+           {"\"\<named\>\""},
+           {"\"\<neural\>\""},
+           {"\"\<snide\>\""},
+           {"\"\<announce\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"-", "n"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal2", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<loin\>\""},
+           {"\"\<donor\>\""},
+           {"\"\<winner\>\""},
+           {"\"\<dinner\>\""},
+           {"\"\<learned\>\""},
+           {"\"\<lend\>\""},
+           {"\"\<allowance\>\""},
+           {"\"\<flaunt\>\""},
+           {"\"\<deference\>\""},
+           {"\"\<different\>\""},
+           {"\"\<dance\>\""},
+           {"\"\<diner\>\""},
+           {"\"\<demand\>\""},
+           {"\"\<grunt\>\""},
+           {"\"\<grant\>\""},
+           {"\"\<gleans\>\""},
+           {"\"\<severance\>\""},
+           {"\"\<cement\>\""},
+           {"\"\<design\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"m", "-"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal3", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<mound\>\""},
+           {"\"\<mourn\>\""},
+           {"\"\<maim\>\""},
+           {"\"\<matter\>\""},
+           {"\"\<commit\>\""},
+           {"\"\<commend\>\""},
+           {"\"\<smudge\>\""},
+           {"\"\<smuggle\>\""},
+           {"\"\<semester\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"-", "m"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal4", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<forms\>\""},
+           {"\"\<primed\>\""},
+           {"\"\<rhymes\>\""},
+           {"\"\<serum\>\""},
+           {"\"\<time\>\""},
+           {"\"\<hermit\>\""},
+           {"\"\<maim\>\""},
+           {"\"\<plumb\>\""},
+           {"\"\<dream\>\""},
+           {"\"\<gym\>\""},
+           {"\"\<germ\>\""},
+           {"\"\<jam\>\""},
+           {"\"\<blame\>\""},
+           {"\"\<bottom\>\""},
+           {"\"\<grammar\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"-", "lm"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal5", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<balm\>\""},
+           {"\"\<psalm\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"j", "-"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal6", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<judge\>\""},
+           {"\"\<journal\>\""},
+           {"\"\<join\>\""},
+           {"\"\<joyful\>\""},
+           {"\"\<jam\>\""},
+           {"\"\<gerunds\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"-", "j"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal7", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<forge\>\""},
+           {"\"\<budgets\>\""},
+           {"\"\<average\>\""},
+           {"\"\<leverage\>\""},
+           {"\"\<merge\>\""},
+           {"\"\<beige\>\""},
+           {"\"\<carriage\>\""},
+           {"\"\<fidget\>\""},
+           {"\"\<frigid\>\""},
+           {"\"\<digit\>\""},
+           {"\"\<gadget\>\""},
+           {"\"\<garage\>\""},
+           {"\"\<grudge\>\""},
+           {"\"\<turgid\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"y", "-"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal8", "=", 
+     RowBox[{"Drop", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", GridBox[{
+           {"\"\<year\>\""},
+           {"\"\<yearn\>\""},
+           {"\"\<yolk\>\""}
+          }], ")"}], "//", "Flatten"}], ",", "0"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ideal", "=", "ideal3"}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"InputField", "[", 
+       RowBox[{
+        RowBox[{"Dynamic", "[", "x", "]"}], ",", "String", ",", 
+        RowBox[{"ContinuousAction", "->", "True"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Dynamic", "[", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Not", "[", 
+            RowBox[{"x", "===", "\"\< \>\""}], "]"}], "\[And]", 
+           RowBox[{"ContainsAny", "[", 
+            RowBox[{
+             RowBox[{"Characters", "[", "x", "]"}], ",", 
+             RowBox[{"{", "\"\< \>\"", "}"}]}], "]"}]}], ")"}], ",", 
+         "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{"If", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"upperQ", "[", "x", "]"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"x", "=", "\"\<\>\""}], ";", "bad", ";", 
+             RowBox[{"lis", "=", 
+              RowBox[{"{", "}"}]}]}], ")"}], ",", "\[IndentingNewLine]", 
+           "\[IndentingNewLine]", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"AppendTo", "[", 
+              RowBox[{"lis", ",", 
+               RowBox[{"x", "//", "StringTrim"}]}], "]"}], ";", 
+             RowBox[{"Speak", "[", "x", "]"}], ";", 
+             RowBox[{"Pause", "[", ".2", "]"}], ";", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{"ideal", "===", "lis"}], ",", 
+               RowBox[{"Do", "[", 
+                RowBox[{"veryGood", ",", "3"}], "]"}]}], "]"}], ";", 
+             "\[IndentingNewLine]", 
+             RowBox[{"If", "[", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"SubsetQ", "[", 
+                 RowBox[{"ideal", ",", "lis"}], "]"}], "\[And]", 
+                RowBox[{"DuplicateFreeQ", "[", "lis", "]"}]}], ",", 
+               "\[IndentingNewLine]", "good", ",", "\[IndentingNewLine]", 
+               RowBox[{"(", 
+                RowBox[{"bad", ";", 
+                 RowBox[{"lis", "=", 
+                  RowBox[{"{", "}"}]}]}], ")"}]}], "]"}], ";", 
+             RowBox[{"x", "=", "\"\<\>\""}]}], ")"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"x", ";", 
+          RowBox[{"Column", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Row", "[", 
+              RowBox[{"MapIndexed", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"Highlighted", "[", 
+                  RowBox[{"#1", ",", 
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"First", "[", "#2", "]"}], "<=", 
+                    RowBox[{"Length", "[", "lis", "]"}]}], ",", 
+                    RowBox[{"Background", "->", "Red"}], ",", 
+                    RowBox[{"Background", "->", "yellow"}]}], "]"}]}], "]"}], 
+                 "&"}], ",", "ideal"}], "]"}], "]"}], ",", 
+             RowBox[{"Row", "[", 
+              RowBox[{"MapIndexed", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"dd", "[", 
+                  RowBox[{"#1", ",", 
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"First", "[", "#2", "]"}], "<=", 
+                    RowBox[{"Length", "[", "lis", "]"}]}], ",", "Red", ",", 
+                    "yellow"}], "]"}]}], "]"}], "&"}], ",", "ideal"}], "]"}], 
+              "]"}], ",", 
+             RowBox[{"Row", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"Highlighted", "[", 
+                 RowBox[{"#1", ",", 
+                  RowBox[{"Background", "->", "Red"}]}], "]"}], "&"}], "/@", 
+               "lis"}], "]"}], ",", 
+             RowBox[{"Row", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"dd", "[", 
+                 RowBox[{"#1", ",", "Red"}], "]"}], "&"}], "/@", "lis"}], 
+              "]"}]}], "}"}], "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+       "]"}]}], "\[IndentingNewLine]", "}"}], "//", "Column"}]}]}]], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[2]:=",
+ CellID->1139913708],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     InputFieldBox[Dynamic[$CellContext`x], String,
+      ContinuousAction->True]},
+    {
+     DynamicBox[ToBoxes[
+       If[
+        And[
+         Not[$CellContext`x === " "], 
+         ContainsAny[
+          Characters[$CellContext`x], {" "}]], 
+        If[
+         steno`upperQ[$CellContext`x], $CellContext`x = ""; steno`bad; 
+         steno`lis = {}, AppendTo[steno`lis, 
+           StringTrim[$CellContext`x]]; Speak[$CellContext`x]; Pause[0.2]; 
+         If[$CellContext`ideal === steno`lis, 
+           Do[steno`veryGood, 3]]; If[
+           And[
+            SubsetQ[$CellContext`ideal, steno`lis], 
+            DuplicateFreeQ[steno`lis]], steno`good, steno`bad; 
+           steno`lis = {}]; $CellContext`x = ""], $CellContext`x; Column[{
+           Row[
+            MapIndexed[Highlighted[#, 
+              If[
+              First[#2] <= Length[steno`lis], Background -> Red, Background -> 
+               cephalon`yellow]]& , $CellContext`ideal]], 
+           Row[
+            MapIndexed[steno`dd[#, 
+              If[
+              First[#2] <= Length[steno`lis], Red, 
+               cephalon`yellow]]& , $CellContext`ideal]], 
+           Row[
+            Map[Highlighted[#, Background -> Red]& , steno`lis]], 
+           Row[
+            Map[steno`dd[#, Red]& , steno`lis]]}]], StandardForm],
+      ImageSizeCache->{1030.9000005722046`, {557.208984375, 26.49609375}}]}
+   },
+   DefaultBaseStyle->"Column",
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Column"]], "Output",
+ ImageSize->{551, 1049},
+ ImageMargins->{{0, 0}, {0, 0}},
+ ImageRegion->{{0, 1}, {0, 1}},
+ CellLabel->"Out[2]=",
+ CellID->1824092760]
+}, Open  ]]
+}, Open  ]],
+
+Cell["", "SectionFooterSpacer"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{6},
+   "Spacer1"]]],
+ "Related Guides"
+}], "MoreAboutSection",
+ WholeCellGroupOpener->True,
+ CellID->38303248],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[BoxData[
+ TemplateBox[{Cell[
+    TextData["stenography"]],"paclet:steno/guide/stenography"},
+  "RefLink",
+  BaseStyle->"MoreAbout"]], "MoreAbout",
+ CellID->433447942]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"dm",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "SymbolColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:steno/guide/steno", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "HasOptions" -> False, "ExampleCounter" -> 1, "NeedPlatMsgIn" -> 
+  None, "RootCaptions" -> "", 
+  "Metadata" -> {
+   "built" -> "{2019, 5, 20, 10, 18, 42.949326}", 
+    "history" -> {"0.0", "", "", ""}, "context" -> "steno`", "keywords" -> {},
+     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> 
+    True, "label" -> "steno Symbol", "language" -> "en", "paclet" -> "steno", 
+    "status" -> "None", "summary" -> 
+    "dm[] This Cell Prints the latest version of my steno learning game.", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "dm", "titlemodifier" -> 
+    "", "windowtitle" -> "dm", "type" -> "Symbol", "uri" -> "steno/ref/dm", 
+    "WorkflowDockedCell" -> ""}, "SearchTextTranslated" -> "", "NewStyles" -> 
+  False},
+CellContext->"Global`",
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> 
+  "11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, 2018)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[4308, 128, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"62f991de-1c37-4b3f-a70b-62fa247adefa",
+   CellTags->"PrimaryExamplesSection",
+   CellID->1703799352]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 18671, 555}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[574, 21, 2994, 74, 70, "AnchorBarGrid",ExpressionUUID->"e6e5723f-b8f9-43ad-b37a-7f1ca4ae4378",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[3593, 99, 159, 6, 70, "ObjectNameGrid",ExpressionUUID->"55686692-2b80-4737-b4ab-ead0b1660493"],
+Cell[3755, 107, 516, 16, 70, "Usage",ExpressionUUID->"cacf1de9-89ad-460d-b7ba-c853ce000eaa",
+ CellID->982511436]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4308, 128, 268, 10, 70, "PrimaryExamplesSection",ExpressionUUID->"62f991de-1c37-4b3f-a70b-62fa247adefa",
+ CellTags->"PrimaryExamplesSection",
+ CellID->1703799352],
+Cell[CellGroupData[{
+Cell[4601, 142, 196, 6, 70, "ExampleSection",ExpressionUUID->"76eac364-16d0-4482-b650-bbdba18bbc9b",
+ CellID->1208759966],
+Cell[4800, 150, 131, 4, 70, "Input",ExpressionUUID->"9891ba91-76fd-4166-9f70-af3a1a5b3a09",
+ CellID->2050583370],
+Cell[CellGroupData[{
+Cell[4956, 158, 9642, 274, 70, "Input",ExpressionUUID->"8bdf1e32-8fa1-4e14-93ce-b76b53c9e0b3",
+ CellID->1139913708],
+Cell[14601, 434, 1737, 46, 70, "Output",ExpressionUUID->"521c049e-456f-4c17-af35-3f7921c2a715",
+ CellID->1824092760]
+}, Open  ]]
+}, Open  ]],
+Cell[16365, 484, 31, 0, 70, "SectionFooterSpacer",ExpressionUUID->"bd8d8438-9b3c-49cf-b962-003d3f41d3ac"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16433, 489, 156, 7, 70, "MoreAboutSection",ExpressionUUID->"c5bfac8e-61d1-401d-9efd-aa0cb9bed3fa",
+ CellID->38303248],
+Cell[16592, 498, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"e2d6b7be-098a-4908-adb3-31bf7d171c50"],
+Cell[16626, 500, 171, 5, 70, "MoreAbout",ExpressionUUID->"ce1e0a41-c4f5-45fb-a968-5692e5cc50f9",
+ CellID->433447942]
+}, Open  ]],
+Cell[16812, 508, 23, 0, 70, "FooterCell",ExpressionUUID->"993b110f-a7b7-4b7a-bf64-a336024a7a7c"]
+}
+]
+*)
+
+(* End of internal cache information *)

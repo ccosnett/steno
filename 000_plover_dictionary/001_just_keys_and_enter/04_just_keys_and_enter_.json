@@ -1,0 +1,27 @@
+{
+
+  "PW-PB": "{#Return}",
+
+  "S":"{#S Return}",
+  "T":"{#T Return}",
+  "K":"{#K Return}",
+  "P":"{#P Return}",
+  "W":"{#W Return}",
+  "H":"{#H Return}",
+  "R":"{#R Return}",
+  "A":"{#A Return}",
+  "O":"{#O Return}",
+  "E":"{#E Return}",
+  "U":"{#U Return}",
+  "-F":"{#minus F Return}",
+  "-R":"{#minus R Return}",
+  "-P":"{#minus P Return}",
+  "-B":"{#minus B Return}",
+  "-L":"{#minus L Return}",
+  "-G":"{#minus G Return}",
+  "-T":"{#minus T Return}",
+  "-S":"{#minus S Return}",
+  "-D":"{#minus D Return}",
+  "-Z":"{#minus Z Return}"
+
+}

@@ -1,0 +1,225 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8558,        217]
+NotebookOptionsPosition[      7793,        199]
+NotebookOutlinePosition[      8136,        214]
+CellTagsIndexPosition[      8093,        211]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"PrintMessage", "[", "expr_", "]"}], ":=", 
+     RowBox[{"NotebookWrite", "[", 
+      RowBox[{
+       RowBox[{"MessagesNotebook", "[", "]"}], ",", 
+       RowBox[{"Cell", "[", 
+        RowBox[{
+         RowBox[{"RawBoxes", "@", 
+          RowBox[{"ToBoxes", "[", 
+           RowBox[{"expr", ",", "StandardForm"}], "]"}]}], ",", 
+         "\"\<Output\>\""}], "]"}]}], "]"}]}], ";"}],
+   FontSize->12], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vocalizer", "[", "file_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "lastline", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"lastline", "=", 
+      RowBox[{"Last", "[", "\[IndentingNewLine]", 
+       RowBox[{"Import", "[", 
+        RowBox[{"file", ",", "\"\<List\>\""}], "]"}], "\[IndentingNewLine]", 
+       " ", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"PrintMessage", "[", "lastline", "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Speak", "[", 
+      RowBox[{"ToLowerCase", "[", 
+       RowBox[{"StringDelete", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"StringTake", "[", 
+          RowBox[{
+           RowBox[{
+            StyleBox["First",
+             FontSize->12], "[", 
+            RowBox[{"StringCases", "[", 
+             RowBox[{"lastline", ",", 
+              RowBox[{"\"\<(\>\"", "~~", "__", "~~", "\"\<:\>\""}]}], "]"}], 
+            " ", "]"}], " ", ",", 
+           RowBox[{"{", 
+            RowBox[{"2", ",", 
+             RowBox[{"-", "3"}]}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+         ",", "\"\<*\>\""}], "]"}], " ", "]"}], " ", "]"}]}]}], 
+   "\[IndentingNewLine]", "]"}]}]}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+  3.7656906024434443`*^9, 3.765690603751608*^9}, {3.8091706869855633`*^9, 
+  3.809170814737608*^9}, {3.8091725079399242`*^9, 3.809172532206039*^9}},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[34]:=",ExpressionUUID->"10a8f6f5-966e-4197-9afa-9c4afe598a8b"],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"PrintMessage", "[", "expr_", "]"}], ":=", 
+    RowBox[{"NotebookWrite", "[", 
+     RowBox[{
+      RowBox[{"MessagesNotebook", "[", "]"}], ",", 
+      RowBox[{"Cell", "[", 
+       RowBox[{
+        RowBox[{"RawBoxes", "@", 
+         RowBox[{"ToBoxes", "[", 
+          RowBox[{"expr", ",", "StandardForm"}], "]"}]}], ",", 
+        "\"\<Output\>\""}], "]"}]}], "]"}]}], ";"}],
+  FontSize->12], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox["PrintMessage",
+   FontSize->12], "[", "\"\<asdf\>\"", "]"}]}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+   3.7656906024434443`*^9, 3.765690603751608*^9}, {3.809172203784864*^9, 
+   3.80917221343189*^9}, 3.809172513200555*^9},
+ Background->GrayLevel[0.95],
+ CellLabel->"In[14]:=",ExpressionUUID->"e551b3eb-c32f-4544-b1c2-b11412c47d52"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   StyleBox["Clear",
+    FontSize->12], 
+   StyleBox["[",
+    FontSize->12], 
+   StyleBox["f",
+    FontSize->12], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{
+    RowBox[{
+    "file", "=", 
+     "\"\</home/conor/Dropbox/05_PROGRAMS/17_steno/stroke_sonification/\
+strokes.log\>\""}], ";"}],
+   FontSize->12], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"modificationDate", ":=", 
+     RowBox[{"FileDate", "[", 
+      RowBox[{"file", ",", "\"\<Modification\>\""}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Abs", "[", 
+     RowBox[{"PrintMessage", "[", 
+      RowBox[{"(", 
+       RowBox[{"modificationDate", "-", 
+        RowBox[{"CurrentDate", "[", "]"}]}], ")"}], "]"}], " ", "]"}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Abs", "[", 
+        RowBox[{"(", 
+         RowBox[{"modificationDate", "-", 
+          RowBox[{"CurrentDate", "[", "]"}]}], ")"}], " ", "]"}], 
+       "\[LessEqual]", 
+       RowBox[{"Quantity", "[", 
+        RowBox[{"1", ",", "\"\<Seconds\>\""}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        StyleBox["PrintMessage",
+         FontSize->12], "[", "\"\<YES\>\"", "]"}], ";", 
+       RowBox[{"vocalizer", "[", "file", "]"}], ";", 
+       RowBox[{"Pause", "[", "0.5", "]"}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       StyleBox["PrintMessage",
+        FontSize->12], "[", "\"\<NO\>\"", "]"}]}], "\[IndentingNewLine]", 
+     "]"}]}], ",", 
+   RowBox[{"{", "1000", "}"}]}], " ", "\[IndentingNewLine]", "  ", 
+  "]"}]}], "Input",
+ CellFrame->{{True, True}, {False, True}},
+ CellFrameLabels->{{None, None}, {None, "input (mathematica code)"}},
+ CellChangeTimes->{{3.765690460663842*^9, 3.765690461391439*^9}, {
+   3.7656906024434443`*^9, 3.765690603751608*^9}, {3.8091064480356197`*^9, 
+   3.809106455050597*^9}, 3.809106522718823*^9, {3.8091065591374083`*^9, 
+   3.809106727719501*^9}, {3.8091078694225492`*^9, 3.809107885152347*^9}, {
+   3.809108071242961*^9, 3.809108072674831*^9}, {3.809108189346272*^9, 
+   3.809108255502494*^9}, {3.809154728953442*^9, 3.8091547499753323`*^9}, {
+   3.809154847260747*^9, 3.809154859288239*^9}, {3.809154915316168*^9, 
+   3.809154957937339*^9}, {3.809155021465637*^9, 3.8091550222621717`*^9}, 
+   3.809170316048677*^9, {3.809170831484733*^9, 3.809170846106956*^9}, {
+   3.8091710947633467`*^9, 3.809171215028151*^9}, {3.809171254591989*^9, 
+   3.8091715550832567`*^9}, {3.8091716190827436`*^9, 3.809171790936392*^9}, {
+   3.80917182934371*^9, 3.809171849390292*^9}, {3.8091718814584417`*^9, 
+   3.809171888745837*^9}, {3.809171930746966*^9, 3.8091719623004627`*^9}, {
+   3.809171996623685*^9, 3.809172029562078*^9}, {3.809172062416984*^9, 
+   3.809172065863637*^9}, {3.8091721018343363`*^9, 3.809172105507762*^9}, {
+   3.809172153520564*^9, 3.809172179068253*^9}, {3.809172237300292*^9, 
+   3.809172309537932*^9}, {3.809172445240704*^9, 3.809172496513229*^9}, {
+   3.8091725472777233`*^9, 3.8091725652742577`*^9}},
+ Background->GrayLevel[
+  0.95],ExpressionUUID->"daf610e7-660c-4b4f-8446-ad419d20d6da"],
+
+Cell[BoxData[
+ RowBox[{"ieseds", " ", "-", "LGTSD", " ", "-", "LGTSD", " ", "-", "GTSD", 
+  " ", "-", "LGTD", " ", "-", 
+  RowBox[{"LGTD", " ", "*", "FRSZ", " ", "*", "FRPBZchs"}]}]], "Input",
+ CellChangeTimes->{{3.809172568885828*^9, 
+  3.8091725775469913`*^9}},ExpressionUUID->"1abec6c0-bb63-426d-9ddc-\
+8241e79ee435"],
+
+Cell[BoxData[
+ RowBox[{"lessing", " ", "being", " ", "be", " ", "willing", " ", "the", " ", 
+  "thability"}]], "Input",
+ CellChangeTimes->{{3.8091725509209633`*^9, 
+  3.809172557053508*^9}},ExpressionUUID->"b1a63b5e-f409-4b72-b786-\
+9f2586b8a1dd"],
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"be", " ", "being", " ", "be"}]}]], "Input",
+ CellChangeTimes->{{3.8091724774144382`*^9, 
+  3.809172480337641*^9}},ExpressionUUID->"2b3e70e1-a4c7-4671-9984-\
+00029ec656a8"]
+},
+WindowSize->{1688, 1388},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"DefaultModified2.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2183, 53, 617, "Input",ExpressionUUID->"10a8f6f5-966e-4197-9afa-9c4afe598a8b"],
+Cell[2744, 75, 980, 24, 221, "Input",ExpressionUUID->"e551b3eb-c32f-4544-b1c2-b11412c47d52"],
+Cell[3727, 101, 3275, 74, 661, "Input",ExpressionUUID->"daf610e7-660c-4b4f-8446-ad419d20d6da"],
+Cell[7005, 177, 320, 6, 61, "Input",ExpressionUUID->"1abec6c0-bb63-426d-9ddc-8241e79ee435"],
+Cell[7328, 185, 247, 5, 61, "Input",ExpressionUUID->"b1a63b5e-f409-4b72-b786-9f2586b8a1dd"],
+Cell[7578, 192, 211, 5, 61, "Input",ExpressionUUID->"2b3e70e1-a4c7-4671-9984-00029ec656a8"]
+}
+]
+*)
+

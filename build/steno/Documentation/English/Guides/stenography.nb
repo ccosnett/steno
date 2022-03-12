@@ -1,0 +1,769 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     25222,        760]
+NotebookOptionsPosition[     18518,        631]
+NotebookOutlinePosition[     19970,        668]
+CellTagsIndexPosition[     19927,        665]
+WindowTitle->stenography
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {Cell["STENO GUIDE", "PacletNameCell"], Cell[TextData[{
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "Functions",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"Functions", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"bad\"\>":>Documentation`HelpLookup[
+       "paclet:steno/ref/bad"], "\<\"bme\"\>":>Documentation`HelpLookup[
+       "paclet:steno/ref/bme"], "\<\"breathe\"\>":>Documentation`HelpLookup[
+       "paclet:steno/ref/breathe"], "\<\"cheat\"\>":>Documentation`HelpLookup[
+       "paclet:steno/ref/cheat"], "\<\"commandSquare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/commandSquare"], "\<\"copyStenoOrder\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/copyStenoOrder"], "\<\"dd\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/dd"], "\<\"di\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/di"], "\<\"dm\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/dm"], "\<\"dMinor\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/dMinor"], "\<\"eDiminished\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/eDiminished"], "\<\"editCommandSquare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/editCommandSquare"], "\<\"editFingerSpellSquare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/editFingerSpellSquare"], "\<\"editPhonemeSquare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/editPhonemeSquare"], "\<\"fingerSpellSquare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/fingerSpellSquare"], "\<\"good\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/good"], "\<\"homePositionP\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/homePositionP"], "\<\"id\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/id"], "\<\"instruments\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/instruments"], "\<\"lerip\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/lerip"], "\<\"lis\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/lis"], "\<\"listdd\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/listdd"], "\<\"lo\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/lo"], "\<\"myOwnDictionary\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/myOwnDictionary"], "\<\"nemonic\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/nemonic"], "\<\"phonemeSquare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/phonemeSquare"], "\<\"play\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/play"], "\<\"pract\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/pract"], "\<\"soundSquare\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/soundSquare"], "\<\"speaker\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/speaker"], "\<\"upperQ\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/upperQ"], "\<\"veryGood\"\>":>
+       Documentation`HelpLookup[
+       "paclet:steno/ref/veryGood"], "\<\"veryGood2\"\>":>
+       Documentation`HelpLookup["paclet:steno/ref/veryGood2"]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"GuideFunction"]],
+      LineSpacing->{1.4, 0}],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      ActionMenuBox[
+       FrameBox[
+        InterpretationBox[Cell[TextData[{
+          "URL",
+          StyleBox[" \[FilledDownTriangle]", "AnchorBarArrow",
+           StripOnInput->False]
+         }]],
+         TextCell[
+          Row[{"URL", 
+            Style[" \[FilledDownTriangle]", "AnchorBarArrow"]}]]],
+        StripOnInput->False], {"\<\"steno/guide/stenography\"\>":>
+       None, "\<\"Copy Wolfram Documentation Center URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell["steno/guide/stenography"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+       Delimiter, "\<\"Copy web URL\"\>":>
+       Module[{DocumentationSearch`Private`nb$}, 
+        DocumentationSearch`Private`nb$ = NotebookPut[
+           Notebook[{
+             Cell[
+              BoxData[
+               MakeBoxes[
+                Hyperlink[
+                "http://reference.wolfram.com/language/steno/guide/\
+stenography.html"], StandardForm]], "Input", TextClipboardType -> 
+              "PlainText"]}, Visible -> False]]; 
+        SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+        FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+        NotebookClose[DocumentationSearch`Private`nb$]; 
+        Null], "\<\"Go to web URL\"\>":>FrontEndExecute[{
+         NotebookLocate[{
+           URL[
+            StringJoin[
+             If[
+              TrueQ[DocumentationBuild`Make`Private`wsmlinkQ$8368], 
+              "http://reference.wolfram.com/system-modeler/", 
+              "http://reference.wolfram.com/language/"], 
+             "steno/guide/stenography", ".html"]], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"]],
+      LineSpacing->{1.4, 0}]
+    }], "AnchorBar"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1],
+
+Cell[CellGroupData[{
+
+Cell["stenography", "GuideTitle",
+ CellID->942062912],
+
+Cell["\[NonBreakingSpace]", "GuideAbstract",
+ CellID->1]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{6},
+   "Spacer1"]]],
+ "Reference"
+}], "GuideReferenceSection",
+ WholeCellGroupOpener->True],
+
+Cell["", "SectionHeaderSpacer"],
+
+Cell[CellGroupData[{
+
+Cell["steno1", "GuideFunctionsSubsection",
+ CellID->87534072],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["cheat"]],"paclet:steno/ref/cheat"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens the ",
+ StyleBox["Learn Plover! Appendix: Cheat Sheat",
+  FontSlant->"Italic"],
+ " pdf"
+}], "GuideText",
+ CellID->203374175],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["lo"]],"paclet:steno/ref/lo"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens a jpeg containing Scott's Splitography ",
+ StyleBox["l",
+  FontWeight->"Bold"],
+ "ay",
+ StyleBox["o",
+  FontWeight->"Bold"],
+ "ut"
+}], "GuideText",
+ CellID->1463276848],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["lerip"]],"paclet:steno/ref/lerip"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " cell-prints a steno keyboard layout"
+}], "GuideText",
+ CellID->140205876],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["homePositionP"]],"paclet:steno/ref/homePositionP"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " cell-prints the home position"
+}], "GuideText",
+ CellID->233252966],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["nemonic"]],"paclet:steno/ref/nemonic"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " cell-prints: ",
+ StyleBox["Should The King Please Wear His Red And Orange STARry Elephant \
+Underwear For Royal Purposes Before Lunch Gets Totally Super Devoured by \
+Zombies",
+  FontSlant->"Italic"]
+}], "GuideText",
+ CellID->1124943787],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["shortcuts"]],"paclet:steno/ref/shortcuts"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens a pdf table containing keyboard shortcuts and steno codes (Command \
+Square)"
+}], "GuideText",
+ CellID->484199921],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["editCommandSquare"]],"paclet:steno/ref/editCommandSquare"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens the eponymous notebook"
+}], "GuideText",
+ CellID->1887386634],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["editPhonemeSquare"]],"paclet:steno/ref/editPhonemeSquare"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens the eponymous notebook"
+}], "GuideText",
+ CellID->826207801],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["editFingerSpellSquare"]],
+    "paclet:steno/ref/editFingerSpellSquare"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens the eponymous notebook"
+}], "GuideText",
+ CellID->445249905],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["commandSquare"]],"paclet:steno/ref/commandSquare"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens a pdf table containing keyboard shortcuts and steno codes (Command \
+Square)"
+}], "GuideText",
+ CellID->1482127187],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["fingerSpellSquare"]],"paclet:steno/ref/fingerSpellSquare"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens a pdf table containing steno codes for finger spelling individual \
+letters"
+}], "GuideText",
+ CellID->1448810356],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["phonemeSquare"]],"paclet:steno/ref/phonemeSquare"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " periodic table of the phonemes, the standard model of steno"
+}], "GuideText",
+ CellID->1986063606],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["soundSquare"]],"paclet:steno/ref/soundSquare"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " see phoneme square"
+}], "GuideText",
+ CellID->1432700721],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["copyStenoOrder"]],"paclet:steno/ref/copyStenoOrder"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " copys STKPWHRAO*EUFRPBLGTSDBZ to the clipboard"
+}], "GuideText",
+ CellID->1814367683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["steno2", "GuideFunctionsSubsection",
+ CellID->1523881286],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["speaker"]],"paclet:steno/ref/speaker"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens an input field that if typed in sonifies each phoneme using a \
+concatenative computer voice. Spaces tell the field to execute. "
+}], "GuideText",
+ CellID->1405630053],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["breathe"]],"paclet:steno/ref/breathe"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens a loading bar which breathes"
+}], "GuideText",
+ CellID->1547086102],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["pract"]],"paclet:steno/ref/pract"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " opens a talking input field and prints the home position"
+}], "GuideText",
+ CellID->144118438],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["dm"]],"paclet:steno/ref/dm"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " This Cell Prints the latest version of my steno learning game."
+}], "GuideText",
+ CellID->1984517297],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["dMinor"]],"paclet:steno/ref/dMinor"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " plays a chord from the list called chords1 on a random instrument (uses \
+modular (cyclical) arithmetic to cycle through the chords)"
+}], "GuideText",
+ CellID->1213689122],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["eDiminished"]],"paclet:steno/ref/eDiminished"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " plays an E Diminished chord on a randon instrument."
+}], "GuideText",
+ CellID->1673394248],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["veryGood"]],"paclet:steno/ref/veryGood"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->1291285024],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["veryGood2"]],"paclet:steno/ref/veryGood2"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->157661786],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["instruments"]],"paclet:steno/ref/instruments"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->1659489150],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["play"]],"paclet:steno/ref/play"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->1664020461],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["upperQ"]],"paclet:steno/ref/upperQ"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->512353146],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["good"]],"paclet:steno/ref/good"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->1857383999],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["bad"]],"paclet:steno/ref/bad"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->1230578401],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["lis"]],"paclet:steno/ref/lis"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->2063664997]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["steno3", "GuideFunctionsSubsection",
+ CellID->1903365746],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["di"]],"paclet:steno/ref/di"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " translates english to steno"
+}], "GuideText",
+ CellID->2104183771],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["id"]],"paclet:steno/ref/id"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " translates steno to english"
+}], "GuideText",
+ CellID->820562621],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["$ii"]],"paclet:steno/ref/$ii"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " loads the current steno dictionary files to this variable"
+}], "GuideText",
+ CellID->55990113],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["myOwnDictionary"]],"paclet:steno/ref/myOwnDictionary"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " contains my favourite steno code for a large organized subset of the \
+dictionary"
+}], "GuideText",
+ CellID->427991805],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["dd"]],"paclet:steno/ref/dd"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " uses my preferred translation to translate english to steno"
+}], "GuideText",
+ CellID->924062601],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["listdd"]],"paclet:steno/ref/listdd"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " ."
+}], "GuideText",
+ CellID->118399903],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{Cell[
+     TextData["bme"]],"paclet:steno/ref/bme"},
+   "RefLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " searches for words containing a certain character at the beginning, the \
+middle and the end."
+}], "GuideText",
+ CellID->1377312599]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{725, 750},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"stenography",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "GuideColor", "LinkTrails" -> 
+  GridBox[{{
+      RowBox[{
+        ButtonBox[
+        "Mathematica", ButtonData -> "paclet:steno/guide/steno", 
+         BaseStyle -> {"Link", "DockedLinkTrail"}]}]}}, ColumnAlignments -> 
+    Left], "ExampleCounter" -> 1, "NeedPlatMsgIn" -> None, "RootCaptions" -> 
+  "", "Metadata" -> {
+   "built" -> "{2019, 5, 20, 10, 18, 31.059890}", 
+    "history" -> {"0.0", "", "", ""}, "context" -> "steno`", "keywords" -> {},
+     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> 
+    True, "label" -> "steno Guide", "language" -> "en", "paclet" -> "steno", 
+    "status" -> "None", "summary" -> "", "synonyms" -> {}, "tabletags" -> 
+    DocumentationBuild`Make`Private`tabletaggingrules$8261, "title" -> 
+    "stenography", "titlemodifier" -> "", "windowtitle" -> "stenography", 
+    "type" -> "Guide", "uri" -> "steno/guide/stenography"}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[583, 21, 5831, 125, 70, "AnchorBarGrid",ExpressionUUID->"088b7f28-13d4-43d5-81d3-e2b1ea04ae08",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[6439, 150, 53, 1, 70, "GuideTitle",ExpressionUUID->"c5c7d6fb-35d9-4c7c-965c-307db5672c9a",
+ CellID->942062912],
+Cell[6495, 153, 56, 1, 70, "GuideAbstract",ExpressionUUID->"4a17dd60-f4ae-4b9d-bdaa-145caa9c7c75",
+ CellID->1]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6588, 159, 137, 6, 70, "GuideReferenceSection",ExpressionUUID->"b1c9396c-b72a-416e-9b5d-624d78027fe3"],
+Cell[6728, 167, 31, 0, 70, "SectionHeaderSpacer",ExpressionUUID->"4a102a8f-1f27-4004-b183-04c7f650d950"],
+Cell[CellGroupData[{
+Cell[6784, 171, 61, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"683495f1-d3c7-413f-829b-99e3d0481d86",
+ CellID->87534072],
+Cell[6848, 174, 358, 13, 70, "GuideText",ExpressionUUID->"0c54a821-ea2b-4ad0-ba3a-837a11594ed6",
+ CellID->203374175],
+Cell[7209, 189, 396, 16, 70, "GuideText",ExpressionUUID->"d41160a8-72f9-4fe4-bd92-66ef7be1afe8",
+ CellID->1463276848],
+Cell[7608, 207, 301, 10, 70, "GuideText",ExpressionUUID->"e8b1c2e9-a8f8-4386-a8ea-b98f8ca529f6",
+ CellID->140205876],
+Cell[7912, 219, 311, 10, 70, "GuideText",ExpressionUUID->"6726c053-f5c7-4077-89f1-0c7314be997f",
+ CellID->233252966],
+Cell[8226, 231, 469, 14, 70, "GuideText",ExpressionUUID->"6a78d735-1f36-41a4-9142-3c93375edcd1",
+ CellID->1124943787],
+Cell[8698, 247, 356, 11, 70, "GuideText",ExpressionUUID->"b171296d-b8b7-4969-8cb2-99ee852bf7e7",
+ CellID->484199921],
+Cell[9057, 260, 319, 10, 70, "GuideText",ExpressionUUID->"c88ce2d8-7b64-4253-97f7-802ea7690eb2",
+ CellID->1887386634],
+Cell[9379, 272, 318, 10, 70, "GuideText",ExpressionUUID->"dd8aec6c-9d65-4333-ad83-effb067b3d41",
+ CellID->826207801],
+Cell[9700, 284, 331, 11, 70, "GuideText",ExpressionUUID->"e73bf49a-7b5a-47d9-8b17-9a9f4a944c30",
+ CellID->445249905],
+Cell[10034, 297, 365, 11, 70, "GuideText",ExpressionUUID->"470a374a-49a8-4206-8cce-fef515460e49",
+ CellID->1482127187],
+Cell[10402, 310, 372, 11, 70, "GuideText",ExpressionUUID->"b521205b-05c2-4cc8-980b-4acf9da220e6",
+ CellID->1448810356],
+Cell[10777, 323, 342, 10, 70, "GuideText",ExpressionUUID->"10de1198-6031-4bdb-a797-f543bd678794",
+ CellID->1986063606],
+Cell[11122, 335, 297, 10, 70, "GuideText",ExpressionUUID->"8a19629d-0cd6-4492-b0a4-ce4a09a33aa7",
+ CellID->1432700721],
+Cell[11422, 347, 331, 10, 70, "GuideText",ExpressionUUID->"770894c3-5f4f-4808-8c21-e6c7e20af25c",
+ CellID->1814367683]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11790, 362, 63, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"7b5a52a4-2583-4da7-b645-806aa05b7eb1",
+ CellID->1523881286],
+Cell[11856, 365, 405, 11, 70, "GuideText",ExpressionUUID->"4fc3f195-54d8-4794-83df-372782aa00b8",
+ CellID->1405630053],
+Cell[12264, 378, 305, 10, 70, "GuideText",ExpressionUUID->"25854d7a-e6d2-4926-a090-6fefd5597c5f",
+ CellID->1547086102],
+Cell[12572, 390, 322, 10, 70, "GuideText",ExpressionUUID->"af8cfc89-b90c-4038-8d09-aa8c91996bfa",
+ CellID->144118438],
+Cell[12897, 402, 323, 10, 70, "GuideText",ExpressionUUID->"4617cf73-8685-43dc-ac9a-7b3e8080f655",
+ CellID->1984517297],
+Cell[13223, 414, 401, 11, 70, "GuideText",ExpressionUUID->"3053bdd4-d95a-4e71-8c43-878659135eaf",
+ CellID->1213689122],
+Cell[13627, 427, 330, 10, 70, "GuideText",ExpressionUUID->"c4698416-16d5-4a96-a319-e2272433240f",
+ CellID->1673394248],
+Cell[13960, 439, 274, 10, 70, "GuideText",ExpressionUUID->"2372fecf-b730-4597-8cc8-31a487dd3753",
+ CellID->1291285024],
+Cell[14237, 451, 275, 10, 70, "GuideText",ExpressionUUID->"ce44cd72-6f51-48c1-92c7-a1d35ae3b286",
+ CellID->157661786],
+Cell[14515, 463, 280, 10, 70, "GuideText",ExpressionUUID->"43af5121-b884-43c3-8b05-2a514109bd17",
+ CellID->1659489150],
+Cell[14798, 475, 266, 10, 70, "GuideText",ExpressionUUID->"1221d616-2e6f-4a4a-995e-48f75dcb4657",
+ CellID->1664020461],
+Cell[15067, 487, 269, 10, 70, "GuideText",ExpressionUUID->"f89c916d-f793-4f63-aa4d-b487db1c1613",
+ CellID->512353146],
+Cell[15339, 499, 266, 10, 70, "GuideText",ExpressionUUID->"f816a6c6-e68d-4203-8dff-90dc22fbd384",
+ CellID->1857383999],
+Cell[15608, 511, 264, 10, 70, "GuideText",ExpressionUUID->"1ec81d46-2be1-489d-b009-91c08d019ece",
+ CellID->1230578401],
+Cell[15875, 523, 264, 10, 70, "GuideText",ExpressionUUID->"ba8ac843-2eb9-40ce-b16e-3b83d0e93ba5",
+ CellID->2063664997]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16176, 538, 63, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"0e2f0fc6-3af8-4957-aacf-34508cca3446",
+ CellID->1903365746],
+Cell[16242, 541, 288, 10, 70, "GuideText",ExpressionUUID->"db860fe7-ab04-48b1-8b0a-f681dceaceca",
+ CellID->2104183771],
+Cell[16533, 553, 287, 10, 70, "GuideText",ExpressionUUID->"84f61be4-83cd-45f5-ab24-4aff97e514fa",
+ CellID->820562621],
+Cell[16823, 565, 318, 10, 70, "GuideText",ExpressionUUID->"a4a2b628-ae64-4b27-a0ba-30964c12620d",
+ CellID->55990113],
+Cell[17144, 577, 367, 11, 70, "GuideText",ExpressionUUID->"1b2a18fe-8377-4208-a295-844353436ede",
+ CellID->427991805],
+Cell[17514, 590, 319, 10, 70, "GuideText",ExpressionUUID->"450be6bb-fe65-40f7-8743-dcb811d89ee1",
+ CellID->924062601],
+Cell[17836, 602, 269, 10, 70, "GuideText",ExpressionUUID->"c3bb2446-336e-4af5-9967-b06d4141bc89",
+ CellID->118399903],
+Cell[18108, 614, 356, 11, 70, "GuideText",ExpressionUUID->"f398105e-f3d6-4703-8c98-134aa1f18221",
+ CellID->1377312599]
+}, Open  ]]
+}, Open  ]],
+Cell[18491, 629, 23, 0, 70, "FooterCell",ExpressionUUID->"18f7dc5a-8625-496f-a58b-759c0efbf5d4"]
+}
+]
+*)
+
+(* End of internal cache information *)
